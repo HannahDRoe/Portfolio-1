@@ -1,0 +1,18 @@
+@import "app.scss";
+
+ul li {
+	list-style: none;
+}
+
+.skip-links {
+	position: absolute;
+	top: -499999px !important; 
+}
+
+
+
+body{
+
+	font-family: $mainFont;
+	color: #C61515;
+}
