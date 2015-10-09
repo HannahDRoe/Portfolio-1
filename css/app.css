@@ -1,0 +1,60 @@
+/*Sytles for whole page*/
+/* line 9, ../sass/app.scss */
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* line 13, ../sass/app.scss */
+body {
+  font-family: monospace;
+  color: #408080;
+  padding: 0;
+  margin: 0;
+}
+
+/*Nav List*/
+/* line 22, ../sass/app.scss */
+.skipLinks {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  border-bottom: 1em;
+  color: #000;
+}
+
+/*Menu Hamburger*/
+/* line 34, ../sass/app.scss */
+.icon {
+  padding: 1px;
+  background-position: 100% 100%;
+}
+
+/* line 42, ../sass/app.scss */
+body {
+  font-family: monospace;
+  color: #C61515;
+  padding: 0;
+  margin: 0;
+}
+
+/*Header*/
+/* line 50, ../sass/app.scss */
+#top {
+  background-color: purple;
+  padding: none;
+}
+
+/* line 56, ../sass/app.scss */
+.brand {
+  float: left;
+  margin: 17px 50px 17px 0;
+  display: block;
+  width: 130px;
+  height: 18px;
+  text-indent: 100%;
+  overflow: hidden;
+  font-size: 3em;
+}
