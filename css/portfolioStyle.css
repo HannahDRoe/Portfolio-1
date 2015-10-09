@@ -1,18 +1,57 @@
-@import "app.scss";
+@import "../scss/app.scss";
 
+
+/*Sytles for whole page*/
 ul li {
 	list-style: none;
+	text-decoration: none;
 }
+body{
 
-.skip-links {
-	position: absolute;
-	top: -499999px !important; 
+	font-family: $mainFont;
+	color: #C61515;
+	padding: 0;
+	margin: 0;
 }
+/*Nav List*/
+.skipLinks {
+	float:left;
+	list-style: none;
+	margin:0;
+	padding: 0;
+	display: inline-block;
 
+
+}
+/*Menu Hamburger*/
+.icon {
+	padding: 1px;
+    background-position: 100% 100%;
+
+}
+ 
 
 
 body{
 
 	font-family: $mainFont;
 	color: #C61515;
+	padding: 0;
+	margin: 0;
+}
+/*Header*/
+#top{
+	background-color: purple;
+	padding: none;
+
+
+}
+.brand{
+	float: left;
+	margin: 17px 50px 17px 0;
+	display: block;
+	width: 130px;
+	height: 18px;
+	text-indent: 100%;
+	overflow: hidden;
 }
