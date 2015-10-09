@@ -2,14 +2,20 @@ $mainFont: monospace;
 
 $mainFontColor:#408080;
 
-$mainFontSize: 3em;
+$mainFontSize: 1.7em;
 
 
 /*Sytles for whole page*/
 ul li {
 	list-style: none;
 	text-decoration: none;
+	display:inline;
 }
+
+a {
+	text-decoration: none;
+}
+
 body{
 
 	font-family: $mainFont;
@@ -18,7 +24,7 @@ body{
 	margin: 0;
 }
 
-/*Nav List*/
+/*Skip to Links*/
 .skipLinks {
 	float:left;
 	list-style: none;
@@ -30,36 +36,54 @@ body{
 
 
 }
-/*Menu Hamburger*/
+/*Menu Hamburger Bars*/
 .icon {
-	padding: 1px;
-    background-position: 100% 100%;
-
+	padding: 2px;
+	margin: 0px 7px;
+   	display: block;
+    border-bottom: 2px solid #fff;
+    border-radius: 1px;
+    width: 20px;
 }
- 
 
 
-body{
-
-	font-family: $mainFont;
-	color: #C61515;
-	padding: 0;
-	margin: 0;
-}
 /*Header*/
-#top{
-	background-color: purple;
+header{
+	background-color: #00C4C4;
 	padding: none;
+	margin: 0;
+	height: 50px;
 
 
 }
 .brand{
+	position: relative;
 	float: left;
-	margin: 17px 50px 17px 0;
-	display: block;
-	width: 130px;
-	height: 18px;
-	text-indent: 100%;
-	overflow: hidden;
+	margin: 10px;
+	font-family: $mainFont;
 	font-size: $mainFontSize;
+}
+#nav{}
+
+#navLinks{
+
+	display: inline;
+	padding:75px;
+
+	
+}
+
+ /*Menu Hamburger block*/
+.navigation{
+	margin: 12px 3px;
+
+}
+
+/*Screen Reader Only*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border:0;
+    overflow: hidden;
 }

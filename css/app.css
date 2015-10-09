@@ -3,9 +3,15 @@
 ul li {
   list-style: none;
   text-decoration: none;
+  display: inline;
 }
 
-/* line 13, ../sass/app.scss */
+/* line 15, ../sass/app.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 19, ../sass/app.scss */
 body {
   font-family: monospace;
   color: #408080;
@@ -13,8 +19,8 @@ body {
   margin: 0;
 }
 
-/*Nav List*/
-/* line 22, ../sass/app.scss */
+/*Skip to Links*/
+/* line 28, ../sass/app.scss */
 .skipLinks {
   float: left;
   list-style: none;
@@ -25,36 +31,53 @@ body {
   color: #000;
 }
 
-/*Menu Hamburger*/
-/* line 34, ../sass/app.scss */
+/*Menu Hamburger Bars*/
+/* line 40, ../sass/app.scss */
 .icon {
-  padding: 1px;
-  background-position: 100% 100%;
-}
-
-/* line 42, ../sass/app.scss */
-body {
-  font-family: monospace;
-  color: #C61515;
-  padding: 0;
-  margin: 0;
+  padding: 2px;
+  margin: 0px 7px;
+  display: block;
+  border-bottom: 2px solid #fff;
+  border-radius: 1px;
+  width: 20px;
 }
 
 /*Header*/
-/* line 50, ../sass/app.scss */
-#top {
-  background-color: purple;
+/* line 51, ../sass/app.scss */
+header {
+  background-color: #00C4C4;
   padding: none;
+  margin: 0;
+  height: 50px;
 }
 
-/* line 56, ../sass/app.scss */
+/* line 59, ../sass/app.scss */
 .brand {
+  position: relative;
   float: left;
-  margin: 17px 50px 17px 0;
-  display: block;
-  width: 130px;
-  height: 18px;
-  text-indent: 100%;
+  margin: 10px;
+  font-family: monospace;
+  font-size: 1.7em;
+}
+
+/* line 68, ../sass/app.scss */
+#navLinks {
+  display: inline;
+  padding: 75px;
+}
+
+/*Menu Hamburger block*/
+/* line 77, ../sass/app.scss */
+.navigation {
+  margin: 12px 3px;
+}
+
+/*Screen Reader Only*/
+/* line 83, ../sass/app.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
   overflow: hidden;
-  font-size: 3em;
 }
