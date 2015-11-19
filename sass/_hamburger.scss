@@ -1,0 +1,54 @@
+/* Hamburger menu and Skip Links for Accessability*/
+
+/*Skip to Links*/
+.skipLinks
+{
+    display: none;
+}
+/*Menu Hamburger block*/
+.navigation
+{
+    margin: 12px 3px;
+}
+
+/*Menu Hamburger Bars*/
+.icon
+{
+    display: block;
+
+    width: 20px;
+    margin: 0 7px;
+    padding: 2px;
+
+    border-bottom: 2px solid #fff;
+    border-radius: 1px;
+}
+/*Screen Reader Only*/
+.sr-only
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    height: 0;
+
+    border: 0;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 540px)
+{
+    /*Skip to Links from*/
+    .skipLinks
+    {
+        display: block;
+        float: left;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        color: #000;
+    }
+}

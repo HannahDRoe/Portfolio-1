@@ -1,0 +1,83 @@
+/*Header Nav with Links and Brand. With Media Queries*/
+
+$header-height: 4em;
+$navLinkPadding: 1em 1.75em 1.25em 1.75em;
+
+@mixin activeLink
+{
+    color: lighten($mainFontColor, 40%);
+    background-color: #4b6f6f;
+}
+
+
+
+/*Header*/
+header
+{
+    height: $header-height;
+    margin: 0;
+    padding: 0;
+
+    background-color: #00c4c4;
+}
+
+/*Brand In top left corner*/
+.brand
+{
+    font-family: $mainFont;
+    font-size: 1.75em;
+
+    float: left;
+
+    margin: 0.6em 2em 0.7em 1em;
+}
+
+/*Top Nav*/
+#nav
+{
+    font-size: 1.175em;
+
+    float: left;
+
+    margin-top: 1em;
+}
+
+/*Top Nav Links*/
+#navLinks
+{
+    display: inline;
+    a
+    {
+        margin-right: -.5em;
+        padding: $navLinkPadding;
+        &:hover
+        {
+            @include activeLink;
+        }
+    }
+}
+.active
+{
+    li
+    {
+        padding: $navLinkPadding;
+    }
+    a
+    {
+        @include activeLink;
+    }
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 540px)
+{
+    #navLinks
+    {
+        a
+        {
+            margin-left: 0;
+            padding: .5em;
+        }
+    }
+}
