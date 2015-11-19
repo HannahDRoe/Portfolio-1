@@ -51,29 +51,51 @@ header {
   height: 50px;
 }
 
+/*Brand In top left corner*/
 /* line 59, ../sass/app.scss */
 .brand {
-  position: relative;
   float: left;
-  margin: 10px;
+  margin-top: 0.7em;
+  margin-left: 0.37em;
   font-family: monospace;
-  font-size: 1.7em;
+  font-size: 1.47em;
 }
 
-/* line 68, ../sass/app.scss */
+/*Top Nav*/
+/* line 69, ../sass/app.scss */
+#nav {
+  position: relative;
+  float: left;
+  margin: 1.1em;
+  font-size: 1.175em;
+}
+
+/*Top Nav Links*/
+/* line 78, ../sass/app.scss */
 #navLinks {
   display: inline;
-  padding: 75px;
+}
+/* line 81, ../sass/app.scss */
+#navLinks a {
+  margin-left: 0.5em;
+}
+/* line 83, ../sass/app.scss */
+#navLinks a:hover {
+  color: #b3d9d9;
+}
+/* line 86, ../sass/app.scss */
+#navLinks a:active {
+  color: #80c0c0;
 }
 
 /*Menu Hamburger block*/
-/* line 77, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 .navigation {
   margin: 12px 3px;
 }
 
 /*Screen Reader Only*/
-/* line 83, ../sass/app.scss */
+/* line 98, ../sass/app.scss */
 .sr-only {
   position: absolute;
   width: 1px;

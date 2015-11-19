@@ -2,7 +2,7 @@ $mainFont: monospace;
 
 $mainFontColor:#408080;
 
-$mainFontSize: 1.7em;
+$mainFontSize: 1.2em;
 
 
 /*Sytles for whole page*/
@@ -13,7 +13,7 @@ ul li {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none;	
 }
 
 body{
@@ -53,25 +53,40 @@ header{
 	padding: none;
 	margin: 0;
 	height: 50px;
-
-
 }
+
+/*Brand In top left corner*/
 .brand{
+
+	float: left;
+	margin-top: 0.7em;
+	margin-left: 0.37em;
+	font-family: $mainFont;
+	font-size: 1.47em;
+}
+
+/*Top Nav*/
+#nav{
 	position: relative;
 	float: left;
-	margin: 10px;
-	font-family: $mainFont;
-	font-size: $mainFontSize;
-}
-#nav{}
+	margin: 1.1em;
+	font-size: 1.175em;
 
+}
+
+/*Top Nav Links*/
 #navLinks{
 
 	display: inline;
-	padding:75px;
-
-	
-}
+	a{
+		margin-left: 0.5em;
+		&:hover{
+		color: lighten($mainFontColor, 40%);
+		}
+		&:active{
+		color: lighten($mainFontColor, 25%);
+		}
+	}}
 
  /*Menu Hamburger block*/
 .navigation{
