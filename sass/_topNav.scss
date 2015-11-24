@@ -1,7 +1,7 @@
 /*Header Nav with Links and Brand. With Media Queries*/
 
 $header-height: 4em;
-$navLinkPadding: 1em 1.75em 1.25em 1.75em;
+$navLinkPadding: 1em 1.50em 1.25em 1.50em;
 
 @mixin activeLink
 {
@@ -29,7 +29,11 @@ header
 
     float: left;
 
-    margin: 0.6em 2em 0.7em 1em;
+    margin: .6em 2em .7em 1em;
+    &:active
+    {
+        color: lighten($mainFontColor, 50%);
+    }
 }
 
 /*Top Nav*/
@@ -43,7 +47,7 @@ header
 }
 
 /*Top Nav Links*/
-#navLinks
+.navLinks
 {
     display: inline;
     a
@@ -70,14 +74,25 @@ header
 
 
 /*Media Queries*/
-@media screen and (max-width: 540px)
+@media screen and (max-width: 675px)
 {
-    #navLinks
-    {
-        a
-        {
-            margin-left: 0;
-            padding: .5em;
-        }
-    }
+.navLinks > div.show.left{
+    -webkit-transform: translate3d(250px, 0, 0);
+}
+.navLinks > div.left {
+    background: #273D7A;
+    left: -250px;
+}
+
+.navLinks > div {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 250px;
+    height: 100%;
+        transition: transform ease 250ms;
+}
+div{
+    display: block;
+}
 }
