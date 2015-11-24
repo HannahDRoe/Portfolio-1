@@ -1,6 +1,6 @@
 /*Header Nav with Links and Brand. With Media Queries*/
 
-$header-height: 4em;
+$headerHeight: 4em;
 
 $topPadding: 1em;
 $RightPadding: 1.5em;
@@ -9,10 +9,12 @@ $LeftPadding:1.5em;
 
 $navLinkPadding: $topPadding $RightPadding $BottomPadding $LeftPadding;
 
+$linkBackground: #4b6f6f;
+$headerBackground:#00c4c4;
 @mixin activeLink
 {
     color: lighten($mainFontColor, 40%);
-    background-color: #4b6f6f;
+    background-color: $linkBackground;
 }
 
 
@@ -20,11 +22,11 @@ $navLinkPadding: $topPadding $RightPadding $BottomPadding $LeftPadding;
 /*Header*/
 header
 {
-    height: $header-height;
+    height: $headerHeight;
     margin: 0;
     padding: 0;
 
-    background-color: #00c4c4;
+    background-color: $headerBackground;
 }
 
 /*Brand In top left corner*/
@@ -34,7 +36,7 @@ header
     font-size: 1.75em;
 
     float: left;
-
+    
     margin: .6em 2em .7em 1em;
     &:active
     {
@@ -85,27 +87,34 @@ header
 @media screen and (max-width: 675px)
 {
     .show.left{
+
         -webkit-transform: translate3d(250px, 0, 0);
+        &.page{
+        -webkit-filter: blur(5px);
+        }
     }
     .left {
-        background: #273D7A;
+        background: $linkBackground;
         left: -250px;
     }
-
+  
     nav {
-
       li{
             display: block;
             padding: $navLinkPadding;
         }
     }
     .leftPushNav {
-            position: absolute;
-            z-index: 2;
-            top: 0;
-            width: 250px;
-            height: 100%;
-            transition: transform ease 250ms;
-            display: block;
-        }
+    background: $linkBackground;
+    padding: 10px 0 0 0;
+    width: 250px;
+    height: 100%;
+    min-height: 528px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    box-shadow: inset -10px 0 30px -15px darken($linkBackground,5%);
+    transition: all 500ms ease-in-out;
+    }
+    
 }

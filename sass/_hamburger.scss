@@ -1,5 +1,8 @@
 /* Hamburger menu and Skip Links for Accessability*/
 
+$headerHeight: 4em;
+$headerBackground: #00c4c4;
+
 /*Skip to Links*/
 .skipLinks
 {
@@ -8,7 +11,7 @@
 /*Menu Hamburger block*/
 .navigation
 {
-    margin: 12px 3px;
+    margin: 0px 3px;
 }
 
 /*Menu Hamburger Bars*/
@@ -50,5 +53,14 @@
         list-style: none;
 
         color: #000;
+    }
+    button{
+
+        height: $headerHeight - 0.2em;
+        margin: 0px;
+        padding:0px;
+        background-color: $headerBackground;
+        border: none;
+    
     }
 }
