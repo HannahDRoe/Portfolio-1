@@ -75,7 +75,7 @@ body {
 }
 /*Header Nav with Links and Brand. With Media Queries*/
 /*Header*/
-/* line 16, ../sass/_topNav.scss */
+/* line 22, ../sass/_topNav.scss */
 header {
   height: 4em;
   margin: 0;
@@ -84,20 +84,20 @@ header {
 }
 
 /*Brand In top left corner*/
-/* line 26, ../sass/_topNav.scss */
+/* line 32, ../sass/_topNav.scss */
 .brand {
   font-family: monospace;
   font-size: 1.75em;
   float: left;
   margin: .6em 2em .7em 1em;
 }
-/* line 34, ../sass/_topNav.scss */
+/* line 40, ../sass/_topNav.scss */
 .brand:active {
   color: #d5eaea;
 }
 
 /*Top Nav*/
-/* line 41, ../sass/_topNav.scss */
+/* line 47, ../sass/_topNav.scss */
 #nav {
   font-size: 1.175em;
   float: left;
@@ -105,26 +105,26 @@ header {
 }
 
 /*Top Nav Links*/
-/* line 51, ../sass/_topNav.scss */
+/* line 57, ../sass/_topNav.scss */
 .navLinks {
   display: inline;
 }
-/* line 54, ../sass/_topNav.scss */
+/* line 60, ../sass/_topNav.scss */
 .navLinks a {
   margin-right: -0.5em;
   padding: 1em 1.5em 1.25em 1.5em;
 }
-/* line 58, ../sass/_topNav.scss */
+/* line 65, ../sass/_topNav.scss */
 .navLinks a:hover {
   color: #b3d9d9;
   background-color: #4b6f6f;
 }
 
-/* line 66, ../sass/_topNav.scss */
+/* line 73, ../sass/_topNav.scss */
 .active li {
   padding: 1em 1.5em 1.25em 1.5em;
 }
-/* line 70, ../sass/_topNav.scss */
+/* line 77, ../sass/_topNav.scss */
 .active a {
   color: #b3d9d9;
   background-color: #4b6f6f;
@@ -132,29 +132,31 @@ header {
 
 /*Media Queries*/
 @media screen and (max-width: 675px) {
-  /* line 79, ../sass/_topNav.scss */
-  .navLinks > div.show.left {
+  /* line 87, ../sass/_topNav.scss */
+  .show.left {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 
-  /* line 82, ../sass/_topNav.scss */
-  .navLinks > div.left {
+  /* line 90, ../sass/_topNav.scss */
+  .left {
     background: #273D7A;
     left: -250px;
   }
 
-  /* line 87, ../sass/_topNav.scss */
-  .navLinks > div {
+  /* line 97, ../sass/_topNav.scss */
+  nav li {
+    display: block;
+    padding: 1em 1.5em 1.25em 1.5em;
+  }
+
+  /* line 102, ../sass/_topNav.scss */
+  .leftPushNav {
     position: absolute;
     z-index: 2;
     top: 0;
     width: 250px;
     height: 100%;
     transition: transform ease 250ms;
-  }
-
-  /* line 95, ../sass/_topNav.scss */
-  div {
     display: block;
   }
 }

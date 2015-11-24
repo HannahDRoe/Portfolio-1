@@ -28,10 +28,10 @@ app.controller("navCtrl", function($scope, $rootScope) {
     $rootScope.$on("escapePressed", _close);
 });
 
-app.directive("navLinks", function() {
+app.directive("nav", function() {
     return {
-        restrict: "C",
-        template: "<div ng-class='{ show: visible, left: alignment === \"left\" }' ng-transclude></div>",
+        restrict: "E",
+        template: "<div class=\"leftPushNav\" ng-class='{ show: visible, left: alignment === \"left\" }' ng-transclude></div>",
         transclude: true,
         scope: {
             visible: "=",

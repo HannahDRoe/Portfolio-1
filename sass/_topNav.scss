@@ -1,7 +1,13 @@
 /*Header Nav with Links and Brand. With Media Queries*/
 
 $header-height: 4em;
-$navLinkPadding: 1em 1.50em 1.25em 1.50em;
+
+$topPadding: 1em;
+$RightPadding: 1.5em;
+$BottomPadding:1.25em;
+$LeftPadding:1.5em;
+
+$navLinkPadding: $topPadding $RightPadding $BottomPadding $LeftPadding;
 
 @mixin activeLink
 {
@@ -54,6 +60,7 @@ header
     {
         margin-right: -.5em;
         padding: $navLinkPadding;
+
         &:hover
         {
             @include activeLink;
@@ -73,26 +80,32 @@ header
 }
 
 
+
 /*Media Queries*/
 @media screen and (max-width: 675px)
 {
-.navLinks > div.show.left{
-    -webkit-transform: translate3d(250px, 0, 0);
-}
-.navLinks > div.left {
-    background: #273D7A;
-    left: -250px;
-}
+    .show.left{
+        -webkit-transform: translate3d(250px, 0, 0);
+    }
+    .left {
+        background: #273D7A;
+        left: -250px;
+    }
 
-.navLinks > div {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    width: 250px;
-    height: 100%;
-        transition: transform ease 250ms;
-}
-div{
-    display: block;
-}
+    nav {
+
+      li{
+            display: block;
+            padding: $navLinkPadding;
+        }
+    }
+    .leftPushNav {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            transition: transform ease 250ms;
+            display: block;
+        }
 }
