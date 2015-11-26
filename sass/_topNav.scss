@@ -2,18 +2,23 @@
 
 $headerHeight: 4em;
 
+/*Individual Sides Padding*/
 $topPadding: 1em;
 $RightPadding: 1.5em;
-$BottomPadding:1.25em;
-$LeftPadding:1.5em;
+$BottomPadding: 1.25em;
+$LeftPadding: 1.5em;
 
+/*Padding for all sides*/
 $navLinkPadding: $topPadding $RightPadding $BottomPadding $LeftPadding;
 
+/*colors for Navlinks and Header Backgrounds*/
 $linkBackground: #4b6f6f;
-$headerBackground:#00c4c4;
+$headerBackground: #00c4c4;
+
+/*Active Link properties */
 @mixin activeLink
 {
-    color: lighten($mainFontColor, 40%);
+    color: lighten($mainFontColor, 50%);
     background-color: $linkBackground;
 }
 
@@ -36,7 +41,7 @@ header
     font-size: 1.75em;
 
     float: left;
-    
+
     margin: .6em 2em .7em 1em;
     &:active
     {
@@ -55,14 +60,14 @@ header
 }
 
 /*Top Nav Links*/
-.navLinks
+.navLinks,
+.leftPushNav
 {
     display: inline;
     a
     {
         margin-right: -.5em;
         padding: $navLinkPadding;
-
         &:hover
         {
             @include activeLink;
@@ -86,35 +91,44 @@ header
 /*Media Queries*/
 @media screen and (max-width: 675px)
 {
-    .show.left{
-
+    .show.left
+    {
         -webkit-transform: translate3d(250px, 0, 0);
-        &.page{
-        -webkit-filter: blur(5px);
-        }
     }
-    .left {
-        background: $linkBackground;
+    .left
+    {
         left: -250px;
+
+        background: $linkBackground;
     }
-  
-    nav {
-      li{
+
+    nav
+    {
+        li
+        {
             display: block;
+
             padding: $navLinkPadding;
         }
     }
-    .leftPushNav {
-    background: $linkBackground;
-    padding: 10px 0 0 0;
-    width: 250px;
-    height: 100%;
-    min-height: 528px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    box-shadow: inset -10px 0 30px -15px darken($linkBackground,5%);
-    transition: all 500ms ease-in-out;
+    .leftPushNav
+    {
+        position: fixed;
+        top: 0;
+        left: -250px;
+
+        width: 250px;
+        height: 100%;
+        min-height: 528px;
+        padding: 10px 0 0 0;
+
+        transition: all 500ms ease-in-out;
+
+        background: $linkBackground;
+        box-shadow: inset -10px 0 30px -15px darken($linkBackground, 15%);
+        a
+        {
+            color: lighten($mainFontColor, 15%);
+        }
     }
-    
 }

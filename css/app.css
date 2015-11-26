@@ -83,8 +83,12 @@ body {
   }
 }
 /*Header Nav with Links and Brand. With Media Queries*/
+/*Individual Sides Padding*/
+/*Padding for all sides*/
+/*colors for Navlinks and Header Backgrounds*/
+/*Active Link properties */
 /*Header*/
-/* line 24, ../sass/_topNav.scss */
+/* line 29, ../sass/_topNav.scss */
 header {
   height: 4em;
   margin: 0;
@@ -93,20 +97,20 @@ header {
 }
 
 /*Brand In top left corner*/
-/* line 34, ../sass/_topNav.scss */
+/* line 39, ../sass/_topNav.scss */
 .brand {
   font-family: monospace;
   font-size: 1.75em;
   float: left;
   margin: .6em 2em .7em 1em;
 }
-/* line 42, ../sass/_topNav.scss */
+/* line 47, ../sass/_topNav.scss */
 .brand:active {
   color: #d5eaea;
 }
 
 /*Top Nav*/
-/* line 49, ../sass/_topNav.scss */
+/* line 54, ../sass/_topNav.scss */
 #nav {
   font-size: 1.175em;
   float: left;
@@ -114,65 +118,68 @@ header {
 }
 
 /*Top Nav Links*/
-/* line 59, ../sass/_topNav.scss */
-.navLinks {
+/* line 65, ../sass/_topNav.scss */
+.navLinks,
+.leftPushNav {
   display: inline;
 }
-/* line 62, ../sass/_topNav.scss */
-.navLinks a {
+/* line 68, ../sass/_topNav.scss */
+.navLinks a,
+.leftPushNav a {
   margin-right: -0.5em;
   padding: 1em 1.5em 1.25em 1.5em;
 }
-/* line 67, ../sass/_topNav.scss */
-.navLinks a:hover {
-  color: #b3d9d9;
+/* line 72, ../sass/_topNav.scss */
+.navLinks a:hover,
+.leftPushNav a:hover {
+  color: #d5eaea;
   background-color: #4b6f6f;
 }
 
-/* line 75, ../sass/_topNav.scss */
+/* line 80, ../sass/_topNav.scss */
 .active li {
   padding: 1em 1.5em 1.25em 1.5em;
 }
-/* line 79, ../sass/_topNav.scss */
+/* line 84, ../sass/_topNav.scss */
 .active a {
-  color: #b3d9d9;
+  color: #d5eaea;
   background-color: #4b6f6f;
 }
 
 /*Media Queries*/
 @media screen and (max-width: 675px) {
-  /* line 89, ../sass/_topNav.scss */
+  /* line 95, ../sass/_topNav.scss */
   .show.left {
     -webkit-transform: translate3d(250px, 0, 0);
   }
-  /* line 92, ../sass/_topNav.scss */
-  .show.left.page {
-    -webkit-filter: blur(5px);
-  }
 
-  /* line 96, ../sass/_topNav.scss */
+  /* line 99, ../sass/_topNav.scss */
   .left {
-    background: #4b6f6f;
     left: -250px;
+    background: #4b6f6f;
   }
 
-  /* line 102, ../sass/_topNav.scss */
+  /* line 108, ../sass/_topNav.scss */
   nav li {
     display: block;
     padding: 1em 1.5em 1.25em 1.5em;
   }
 
-  /* line 107, ../sass/_topNav.scss */
+  /* line 115, ../sass/_topNav.scss */
   .leftPushNav {
-    background: #4b6f6f;
-    padding: 10px 0 0 0;
-    width: 250px;
-    height: 100%;
-    min-height: 528px;
     position: fixed;
     top: 0;
     left: -250px;
-    box-shadow: inset -10px 0 30px -15px #416060;
+    width: 250px;
+    height: 100%;
+    min-height: 528px;
+    padding: 10px 0 0 0;
     transition: all 500ms ease-in-out;
+    background: #4b6f6f;
+    box-shadow: inset -10px 0 30px -15px #2c4141;
+  }
+  /* line 130, ../sass/_topNav.scss */
+  .leftPushNav a {
+    color: #5eafaf;
   }
 }

@@ -1,8 +1,5 @@
 var app = angular.module("NavApp", []);
 
-
-
-
 app.controller("navCtrl", function($scope, $rootScope) {
 
     $scope.leftVisible = false;
