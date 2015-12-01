@@ -18,8 +18,8 @@
 		<![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	</head>
-	<body ng-controller="navCtrl" class="ng-scope">
-		<header id="top">
+	<body>
+		<header id="top" ng-controller="navCtrl" class="ng-scope">
 			<ul class="skipLinks">
 				<li class="navigation">
 					<button ng-click="showLeft($event)">
@@ -47,7 +47,14 @@
 		</header>
 		
 	<article id="home" class="page">
-		<section></section>
+		<section id="whoIAm">
+			<h2>What I do</h2>
+			<p>I'm a Front-End Developer in Salt Lake City. I'm new at this but I'm getting there. Over the past year I've been putting my time into HTML, CSS, and Javascript. </p>
+			</section>
+		<section id="getInTouch">
+			<h2>Contact Me</h2>
+			<p>Feel free to get in touch,</br>I'd be happy to hear from you </br> (123)456-6789 </p>
+		</section>
 	</article>
 
 

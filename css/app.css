@@ -28,20 +28,21 @@ body {
 }
 
 /* Hamburger menu and Skip Links for Accessability*/
+/*Sass variables, also used in _topNav.scss*/
 /*Skip to Links*/
-/* line 8, ../sass/_hamburger.scss */
+/* line 9, ../sass/_hamburger.scss */
 .skipLinks {
   display: none;
 }
 
 /*Menu Hamburger block*/
-/* line 13, ../sass/_hamburger.scss */
+/* line 14, ../sass/_hamburger.scss */
 .navigation {
   margin: 0px 3px;
 }
 
 /*Menu Hamburger Bars*/
-/* line 19, ../sass/_hamburger.scss */
+/* line 20, ../sass/_hamburger.scss */
 .icon {
   display: block;
   width: 20px;
@@ -52,7 +53,7 @@ body {
 }
 
 /*Screen Reader Only*/
-/* line 31, ../sass/_hamburger.scss */
+/* line 32, ../sass/_hamburger.scss */
 .sr-only {
   position: absolute;
   overflow: hidden;
@@ -63,7 +64,7 @@ body {
 /*Media Queries*/
 @media screen and (max-width: 675px) {
   /*Skip to Links from*/
-  /* line 46, ../sass/_hamburger.scss */
+  /* line 47, ../sass/_hamburger.scss */
   .skipLinks {
     display: block;
     float: left;
@@ -73,7 +74,7 @@ body {
     color: #000;
   }
 
-  /* line 57, ../sass/_hamburger.scss */
+  /* line 58, ../sass/_hamburger.scss */
   button {
     height: 3.8em;
     margin: 0px;
