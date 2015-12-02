@@ -3,16 +3,35 @@ $mainFont: monospace;
 $mainFontColor: #408080;
 $mainFontSize: 1.5em;
 
+body
+{
+
+    position: relative;
+    font-family: $mainFont;
+    height: 750px;
+
+    margin: 0;
+    padding: 0;
+
+    color: $mainFontColor;
+    background-color: rgba(23.5, 19.6, 35.7, .5);
+    h2
+    {
+        font-weight: lighter;
+    }
+}
+
 @mixin contentPosition
 {
-	top: 20%;
-	position: relative;
     line-height: 1.4em;
 
-    float: left;
+    position: relative;
+    margin: 5em;
 
-    margin-left: 10%;
-
+    display: flex;
+    flex-direction: row;
+    
+    height: auto;
 
     color: #eee;
 }
@@ -24,7 +43,7 @@ ul li
 
     padding: none;
 
-    list-style: none;
+    list-style: none; 
 
     text-decoration: none;
 }
@@ -34,58 +53,36 @@ a
     text-decoration: none;
 }
 
-body
-{
-    font-family: $mainFont;
-
-    margin: 0;
-    padding: 0;
-
-    color: $mainFontColor;
-    background-color: rgba(23.5, 19.6, 35.7, .5);   
-}
-
-
 article
 {
-    width: 100%;
-   height: 910px;
-	display: flex;
-	flex-direction: row;
+    width: auto;
+    height: auto;
+    position: relative;
 
-    padding: 0;
-    margin: 0;
-}
+    top: 25%;
+    
 
-#whoIAm
-{
     @include contentPosition;
-    width: 30%;
-    h2
+
+    p
     {
-        font-weight: lighter;
-        margin-bottom: -4%;
+        width: 30em;
+        margin-right: 5em;
     }
 }
 
-#getInTouch
-{
-    @include contentPosition;
-
-    h2
-    {
-       font-weight: lighter;
-       margin-bottom: -2%;
-    }
-}
 
 @import '_hamburger.scss';
 @import '_topNav.scss';
 
-@media screen and (max-width: 675px){
-	article{
-		flex-direction: column;
-	}
-
-
+@media screen and (max-width: 675px)
+{
+    article
+    {
+        flex-direction: column;
+        p{
+            width: auto;
+        }
+    
+    }
 }

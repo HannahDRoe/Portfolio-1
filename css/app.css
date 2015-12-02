@@ -1,5 +1,20 @@
+/* line 7, ../sass/app.scss */
+body {
+  position: relative;
+  font-family: monospace;
+  height: 750px;
+  margin: 0;
+  padding: 0;
+  color: #408080;
+  background-color: rgba(23, 19, 35, 0.5);
+}
+/* line 19, ../sass/app.scss */
+body h2 {
+  font-weight: lighter;
+}
+
 /*Sytles for whole page*/
-/* line 22, ../sass/app.scss */
+/* line 41, ../sass/app.scss */
 ul li {
   display: inline;
   padding: none;
@@ -7,77 +22,47 @@ ul li {
   text-decoration: none;
 }
 
-/* line 33, ../sass/app.scss */
+/* line 52, ../sass/app.scss */
 a {
   text-decoration: none;
 }
 
-/* line 38, ../sass/app.scss */
-body {
-  font-family: monospace;
-  margin: 0;
-  padding: 0;
-  color: #408080;
-  background-color: rgba(23, 19, 35, 0.5);
-}
-
-/* line 50, ../sass/app.scss */
+/* line 57, ../sass/app.scss */
 article {
-  width: 100%;
-  height: 910px;
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 25%;
+  line-height: 1.4em;
+  position: relative;
+  margin: 5em;
   display: flex;
   flex-direction: row;
-  padding: 0;
-  margin: 0;
-}
-
-/* line 61, ../sass/app.scss */
-#whoIAm {
-  top: 20%;
-  position: relative;
-  line-height: 1.4em;
-  float: left;
-  margin-left: 10%;
-  color: #eee;
-  width: 30%;
-}
-/* line 65, ../sass/app.scss */
-#whoIAm h2 {
-  font-weight: lighter;
-  margin-bottom: -4%;
-}
-
-/* line 72, ../sass/app.scss */
-#getInTouch {
-  top: 20%;
-  position: relative;
-  line-height: 1.4em;
-  float: left;
-  margin-left: 10%;
+  height: auto;
   color: #eee;
 }
-/* line 76, ../sass/app.scss */
-#getInTouch h2 {
-  font-weight: lighter;
-  margin-bottom: -2%;
+/* line 68, ../sass/app.scss */
+article p {
+  width: 30em;
+  margin-right: 5em;
 }
 
 /* Hamburger menu and Skip Links for Accessability*/
 /*Sass variables, also used in _topNav.scss*/
 /*Skip to Links*/
-/* line 9, ../sass/_hamburger.scss */
+/* line 9, D:/Scott/Desktop/Web Development/Portfolio/sass/_hamburger.scss */
 .skipLinks {
   display: none;
 }
 
 /*Menu Hamburger block*/
-/* line 14, ../sass/_hamburger.scss */
+/* line 14, D:/Scott/Desktop/Web Development/Portfolio/sass/_hamburger.scss */
 .navigation {
   margin: 0px 3px;
 }
 
 /*Menu Hamburger Bars*/
-/* line 20, ../sass/_hamburger.scss */
+/* line 20, D:/Scott/Desktop/Web Development/Portfolio/sass/_hamburger.scss */
 .icon {
   display: block;
   width: 20px;
@@ -88,7 +73,7 @@ article {
 }
 
 /*Screen Reader Only*/
-/* line 32, ../sass/_hamburger.scss */
+/* line 32, D:/Scott/Desktop/Web Development/Portfolio/sass/_hamburger.scss */
 .sr-only {
   position: absolute;
   overflow: hidden;
@@ -99,7 +84,7 @@ article {
 /*Media Queries*/
 @media screen and (max-width: 675px) {
   /*Skip to Links from*/
-  /* line 47, ../sass/_hamburger.scss */
+  /* line 47, D:/Scott/Desktop/Web Development/Portfolio/sass/_hamburger.scss */
   .skipLinks {
     display: block;
     float: left;
@@ -109,7 +94,7 @@ article {
     color: #000;
   }
 
-  /* line 58, ../sass/_hamburger.scss */
+  /* line 58, D:/Scott/Desktop/Web Development/Portfolio/sass/_hamburger.scss */
   button {
     height: 3.8em;
     margin: 0px;
@@ -124,29 +109,30 @@ article {
 /*colors for Navlinks and Header Backgrounds*/
 /*Active Link properties */
 /*Header*/
-/* line 29, ../sass/_topNav.scss */
+/* line 29, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
 header {
   height: 4em;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: #00c4c4;
 }
 
 /*Brand In top left corner*/
-/* line 39, ../sass/_topNav.scss */
+/* line 40, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
 .brand {
   font-family: monospace;
   font-size: 1.75em;
   float: left;
   margin: .6em 2em .7em 1em;
 }
-/* line 47, ../sass/_topNav.scss */
+/* line 48, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
 .brand:active {
   color: #d5eaea;
 }
 
 /*Top Nav*/
-/* line 54, ../sass/_topNav.scss */
+/* line 55, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
 #nav {
   font-size: 1.175em;
   float: left;
@@ -154,29 +140,29 @@ header {
 }
 
 /*Top Nav Links*/
-/* line 65, ../sass/_topNav.scss */
+/* line 66, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
 .navLinks,
 .leftPushNav {
   display: inline;
 }
-/* line 68, ../sass/_topNav.scss */
+/* line 69, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
 .navLinks a,
 .leftPushNav a {
   margin-right: -0.5em;
   padding: 1em 1.5em 1.25em 1.5em;
 }
-/* line 72, ../sass/_topNav.scss */
+/* line 73, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
 .navLinks a:hover,
 .leftPushNav a:hover {
   color: #d5eaea;
   background-color: #4b6f6f;
 }
 
-/* line 80, ../sass/_topNav.scss */
+/* line 81, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
 .active li {
   padding: 1em 1.5em 1.25em 1.5em;
 }
-/* line 84, ../sass/_topNav.scss */
+/* line 85, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
 .active a {
   color: #d5eaea;
   background-color: #4b6f6f;
@@ -184,24 +170,24 @@ header {
 
 /*Media Queries*/
 @media screen and (max-width: 675px) {
-  /* line 95, ../sass/_topNav.scss */
+  /* line 96, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
   .show.left {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 
-  /* line 99, ../sass/_topNav.scss */
+  /* line 100, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
   .left {
     left: -250px;
     background: #4b6f6f;
   }
 
-  /* line 108, ../sass/_topNav.scss */
+  /* line 109, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
   nav li {
     display: block;
     padding: 1em 1.5em 1.25em 1.5em;
   }
 
-  /* line 115, ../sass/_topNav.scss */
+  /* line 116, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
   .leftPushNav {
     position: fixed;
     z-index: 3;
@@ -215,14 +201,18 @@ header {
     background: #4b6f6f;
     box-shadow: inset -10px 0 30px -15px #2c4141;
   }
-  /* line 131, ../sass/_topNav.scss */
+  /* line 132, D:/Scott/Desktop/Web Development/Portfolio/sass/_topNav.scss */
   .leftPushNav a {
     color: #5eafaf;
   }
 }
 @media screen and (max-width: 675px) {
-  /* line 86, ../sass/app.scss */
+  /* line 81, ../sass/app.scss */
   article {
     flex-direction: column;
+  }
+  /* line 83, ../sass/app.scss */
+  article p {
+    width: auto;
   }
 }
