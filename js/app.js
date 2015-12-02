@@ -1,4 +1,5 @@
 //Controler for Left Sliding Nav
+
 var app = angular.module("NavApp", []);
 
 app.controller("navCtrl", function($scope, $rootScope) {
