@@ -1,31 +1,54 @@
-/*Individual Sides Padding*/
-$topPadding: 1em;
-$RightPadding: 1.5em;
-$BottomPadding: 1.25em;
-$LeftPadding: 1.5em;
-
-/*Padding for all sides*/
-$iconListPadding: $topPadding $RightPadding $BottomPadding $LeftPadding;
 
 $headerHeight: 4em;
 
-@mixin imageMixin {
-	height: $headerHeight;
-	width: 3em;
+
+
+@mixin imageMixin
+{
+    position: relative;
+
+    height: $headerHeight;
+    padding: 1.5em 1.5em 1.3em 1.5em;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    margin: 0 .5em 1em 1em;
 }
 
-#iconList {
-	display: inline;
-	float: right;
-	z-index: 4;
+#iconList
+{
+    display: inline;
+    
+    height: 100%;
+    margin: none;
 }
 
-#linkedIn {
-	@include imageMixin;
-	background-image: "images/linkedIn.svg"
+#linkedIn
+{
+    background: url('../images/linkedIn.svg') center;
+
+    @include imageMixin;
+    &:hover
+    {
+        background-color: #0077b5;
+
+    }
 }
 
-#bitBucket {
-	@include imageMixin;
-	background-image: "images/bitbucket-512px.svg"
+#bitBucket
+{
+    background: url('../images/bitbucket-512px.svg') center;
+
+    @include imageMixin;
+    &:hover
+    {
+        background-color: #205081;
+
+    }
+}
+
+@media screen and (max-width: 775px)
+{
+	#iconList{
+		display: block !important;
+	}
 }

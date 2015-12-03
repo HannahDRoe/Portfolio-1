@@ -4,9 +4,9 @@ $headerHeight: 4em;
 
 /*Individual Sides Padding*/
 $topPadding: 1em;
-$RightPadding: 1.5em;
+$RightPadding: 1.25em;
 $BottomPadding: 1.25em;
-$LeftPadding: 1.5em;
+$LeftPadding: 1.25em;
 
 /*Padding for all sides*/
 $navLinkPadding: $topPadding $RightPadding $BottomPadding $LeftPadding;
@@ -51,13 +51,14 @@ header
 }
 
 /*Top Nav*/
-#nav
+nav
 {
     font-size: 1.175em;
 
     float: left;
 
     margin-top: 1em;
+
 }
 
 /*Top Nav Links*/
@@ -90,7 +91,7 @@ header
 
 
 /*Media Queries*/
-@media screen and (max-width: 675px)
+@media screen and (max-width: 775px)
 {
     .show.left
     {
