@@ -1,20 +1,21 @@
-/* line 7, ../sass/app.scss */
+/* line 9, ../sass/app.scss */
 body {
   position: relative;
-  font-family: monospace;
+  font-family: Sans-serif;
   height: 750px;
   margin: 0;
   padding: 0;
+  font-size: 0.85em;
   color: #408080;
   background-color: rgba(23, 19, 35, 0.5);
 }
-/* line 19, ../sass/app.scss */
-body h2 {
+/* line 24, ../sass/app.scss */
+body h1, body h2 {
   font-weight: lighter;
 }
 
 /*Sytles for whole page*/
-/* line 41, ../sass/app.scss */
+/* line 31, ../sass/app.scss */
 ul li {
   display: inline;
   padding: none;
@@ -22,37 +23,17 @@ ul li {
   text-decoration: none;
 }
 
-/* line 52, ../sass/app.scss */
+/* line 42, ../sass/app.scss */
 a {
   text-decoration: none;
 }
 
-/* line 57, ../sass/app.scss */
-article {
-  width: auto;
-  height: auto;
-  position: relative;
-  top: 25%;
-  line-height: 1.4em;
-  position: relative;
-  margin: 5em;
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  color: #eee;
-}
-/* line 68, ../sass/app.scss */
-article p {
-  width: 30em;
-  margin-right: 5em;
-}
-
 @media screen and (max-width: 775px) {
-  /* line 79, ../sass/app.scss */
+  /* line 52, ../sass/app.scss */
   article {
     flex-direction: column;
   }
-  /* line 81, ../sass/app.scss */
+  /* line 54, ../sass/app.scss */
   article p {
     width: auto;
   }
@@ -131,7 +112,7 @@ header {
 /*Brand In top left corner*/
 /* line 40, ../sass/_topNav.scss */
 .brand {
-  font-family: monospace;
+  font-family: Sans-serif;
   font-size: 1.75em;
   float: left;
   margin: .6em 2em .7em 1em;
@@ -158,24 +139,26 @@ nav {
 /* line 70, ../sass/_topNav.scss */
 .navLinks a,
 .leftPushNav a {
-  margin-right: -0.5em;
-  padding: 1em 1.25em 1.25em 1.25em;
+  margin-right: -0.6em;
+  padding: 1em 1.25em 1.3em 1.25em;
 }
 /* line 74, ../sass/_topNav.scss */
 .navLinks a:hover,
 .leftPushNav a:hover {
   color: #d5eaea;
   background-color: #4b6f6f;
+  transition: background-color 0.5s ease;
 }
 
 /* line 82, ../sass/_topNav.scss */
 .active li {
-  padding: 1em 1.25em 1.25em 1.25em;
+  padding: 1em 1.25em 1.3em 1.25em;
 }
 /* line 86, ../sass/_topNav.scss */
 .active a {
   color: #d5eaea;
   background-color: #4b6f6f;
+  transition: background-color 0.5s ease;
 }
 
 /*Media Queries*/
@@ -194,7 +177,7 @@ nav {
   /* line 110, ../sass/_topNav.scss */
   nav li {
     display: block;
-    padding: 1em 1.25em 1.25em 1.25em;
+    padding: 1em 1.25em 1.3em 1.25em;
   }
 
   /* line 117, ../sass/_topNav.scss */
@@ -216,46 +199,128 @@ nav {
     color: #5eafaf;
   }
 }
-/* line 18, ../sass/_iconList.scss */
+/* line 20, ../sass/_iconList.scss */
 #iconList {
   display: inline;
   height: 100%;
   margin: none;
 }
 
-/* line 26, ../sass/_iconList.scss */
+/* line 30, ../sass/_iconList.scss */
 #linkedIn {
   background: url("../images/linkedIn.svg") center;
   position: relative;
   height: 4em;
-  padding: 1.5em 1.5em 1.3em 1.5em;
+  padding: 1.5em 1.2em 1.3em 1.2em;
   background-repeat: no-repeat;
-  background-size: 1.5em 1.5em;
-  margin: 0 .5em 1em 1em;
+  background-size: 1.3em 1.3em;
+  margin: .4em .3em 1em .3em;
+  float: clearfix;
 }
-/* line 31, ../sass/_iconList.scss */
+/* line 35, ../sass/_iconList.scss */
 #linkedIn:hover {
   background-color: #0077b5;
 }
 
-/* line 38, ../sass/_iconList.scss */
+/* line 42, ../sass/_iconList.scss */
 #bitBucket {
   background: url("../images/bitbucket-512px.svg") center;
   position: relative;
   height: 4em;
-  padding: 1.5em 1.5em 1.3em 1.5em;
+  padding: 1.5em 1.2em 1.3em 1.2em;
   background-repeat: no-repeat;
-  background-size: 1.5em 1.5em;
-  margin: 0 .5em 1em 1em;
+  background-size: 1.3em 1.3em;
+  margin: .4em .3em 1em .3em;
+  float: clearfix;
+  background-size: 1.4em 1.4em;
 }
-/* line 43, ../sass/_iconList.scss */
+/* line 51, ../sass/_iconList.scss */
 #bitBucket:hover {
   background-color: #205081;
 }
 
+/* line 56, ../sass/_iconList.scss */
+#emailMe {
+  background: url("../images/mail.svg") center;
+  position: relative;
+  height: 4em;
+  padding: 1.5em 1.2em 1.3em 1.2em;
+  background-repeat: no-repeat;
+  background-size: 1.3em 1.3em;
+  margin: .4em .3em 1em .3em;
+  float: clearfix;
+  background-size: 1.5em 1.5em;
+}
+/* line 65, ../sass/_iconList.scss */
+#emailMe:hover {
+  background-color: #AA3939;
+}
+
 @media screen and (max-width: 775px) {
-  /* line 51, ../sass/_iconList.scss */
+  /* line 73, ../sass/_iconList.scss */
   #iconList {
-    display: block !important;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
   }
+
+  /* line 80, ../sass/_iconList.scss */
+  #linkedIn {
+    margin: 0em -1em 0em 0.25em;
+    background-color: none;
+  }
+  /* line 83, ../sass/_iconList.scss */
+  #linkedIn:hover {
+    background-color: #4b6f6f;
+  }
+
+  /* line 87, ../sass/_iconList.scss */
+  #bitBucket {
+    margin: 0em -2em 0em -2em;
+  }
+  /* line 89, ../sass/_iconList.scss */
+  #bitBucket:hover {
+    background-color: #4b6f6f;
+  }
+
+  /* line 93, ../sass/_iconList.scss */
+  #emailMe {
+    margin: 0em -2em 0em -2em;
+  }
+  /* line 96, ../sass/_iconList.scss */
+  #emailMe:hover {
+    background-color: #4b6f6f;
+  }
+}
+/* line 18, ../sass/_bodyContent.scss */
+article {
+  position: relative;
+  width: auto;
+  height: auto;
+  line-height: 1.3em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3em;
+  color: #eee;
+}
+/* line 26, ../sass/_bodyContent.scss */
+article p {
+  width: 30em;
+  margin-right: 5em;
+}
+
+/* line 34, ../sass/_bodyContent.scss */
+#hello {
+  line-height: 1.3em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3em;
+  color: #eee;
+  font-size: 7em;
+  width: 7em;
+  height: 2em;
+  margin: 1em 0em 0em 1em;
 }

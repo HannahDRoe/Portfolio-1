@@ -1,0 +1,45 @@
+
+
+@mixin contentPosition
+{
+    line-height: 1.3em;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 3em;
+
+    color: #eee;
+}
+
+article
+{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    @include contentPosition;
+    p
+    {
+        width: 30em;
+        margin-right: 5em;
+    }
+}
+
+
+#hello /* It's me */
+{
+    @include contentPosition;
+    font-size: 7em;
+
+    width: 7em;
+    height: 2em;
+
+    margin: 1em 0em 0em 1em;
+    
+
+    
+}

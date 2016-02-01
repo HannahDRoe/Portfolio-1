@@ -5,7 +5,7 @@ $headerHeight: 4em;
 /*Individual Sides Padding*/
 $topPadding: 1em;
 $RightPadding: 1.25em;
-$BottomPadding: 1.25em;
+$BottomPadding: 1.3em;
 $LeftPadding: 1.25em;
 
 /*Padding for all sides*/
@@ -20,8 +20,8 @@ $headerBackground: #00c4c4;
 {
     color: lighten($mainFontColor, 50%);
     background-color: $linkBackground;
-}
-
+     transition: background-color 0.5s ease;
+ }
 
 
 /*Header*/
@@ -68,7 +68,7 @@ nav
     display: inline;
     a
     {
-        margin-right: -.5em;
+        margin-right: -.6em;
         padding: $navLinkPadding;
         &:hover
         {

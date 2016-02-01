@@ -1,6 +1,6 @@
 
 $headerHeight: 4em;
-
+$linkBackground: #4b6f6f;
 
 
 @mixin imageMixin
@@ -8,10 +8,12 @@ $headerHeight: 4em;
     position: relative;
 
     height: $headerHeight;
-    padding: 1.5em 1.5em 1.3em 1.5em;
+    padding: 1.5em 1.2em 1.3em 1.2em;
     background-repeat: no-repeat;
-    background-size: 1.5em 1.5em;
-    margin: 0 .5em 1em 1em;
+    background-size: 1.3em 1.3em;
+    margin: .4em .3em 1em .3em;
+    float: clearfix;
+
 }
 
 #iconList
@@ -20,6 +22,8 @@ $headerHeight: 4em;
     
     height: 100%;
     margin: none;
+
+
 }
 
 #linkedIn
@@ -39,9 +43,27 @@ $headerHeight: 4em;
     background: url('../images/bitbucket-512px.svg') center;
 
     @include imageMixin;
+
+    background-size: 1.4em 1.4em;
+
+
     &:hover
     {
         background-color: #205081;
+
+    }
+}
+#emailMe{
+    background: url('../images/mail.svg') center;
+
+
+    @include imageMixin;
+
+    background-size: 1.5em 1.5em;
+
+    &:hover
+    {
+        background-color: #AA3939;
 
     }
 }
@@ -49,6 +71,31 @@ $headerHeight: 4em;
 @media screen and (max-width: 775px)
 {
 	#iconList{
-		display: block !important;
+		display: flex;
+        flex-direction: row;
+        padding:0;
+        margin: 0;
+
 	}
+    #linkedIn{
+        margin: 0em -1em 0em .25em;
+        background-color: none;
+        &:hover{
+        background-color: $linkBackground;
+        }
+    }
+    #bitBucket{
+        margin: 0em -2em 0em -2em;
+        &:hover{
+        background-color: $linkBackground;
+        }
+    }
+    #emailMe{
+
+    margin: 0em -2em 0em -2em;
+        &:hover{
+        background-color: $linkBackground;
+        }
+    }
 }
+

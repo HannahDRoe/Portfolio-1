@@ -1,7 +1,9 @@
 
-$mainFont: monospace;
+$mainFont: Sans-serif;
 $mainFontColor: #408080;
-$mainFontSize: 1.5em;
+$mainFontSize: .85em;
+
+
 
 body
 {
@@ -13,27 +15,15 @@ body
     margin: 0;
     padding: 0;
 
+    font-size: $mainFontSize;
+
     color: $mainFontColor;
     background-color: rgba(23.5, 19.6, 35.7, .5);
-    h2
+
+    h1, h2
     {
         font-weight: lighter;
     }
-}
-
-@mixin contentPosition
-{
-    line-height: 1.4em;
-
-    position: relative;
-    margin: 5em;
-
-    display: flex;
-    flex-direction: row;
-    
-    height: auto;
-
-    color: #eee;
 }
 
 /*Sytles for whole page*/
@@ -53,23 +43,6 @@ a
     text-decoration: none;
 }
 
-article
-{
-    width: auto;
-    height: auto;
-    position: relative;
-
-    top: 25%;
-    
-
-    @include contentPosition;
-
-    p
-    {
-        width: 30em;
-        margin-right: 5em;
-    }
-}
 
 
 
@@ -87,4 +60,5 @@ article
 
 @import '_hamburger.scss';
 @import '_topNav.scss';
-@import '_iconList.scss'
+@import '_iconList.scss';
+@import '_bodyContent.scss';
