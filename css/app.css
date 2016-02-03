@@ -131,18 +131,18 @@ nav {
 }
 
 /*Top Nav Links*/
-/* line 67, ../sass/_topNav.scss */
+/* line 68, ../sass/_topNav.scss */
 .navLinks,
 .leftPushNav {
   display: inline;
 }
-/* line 70, ../sass/_topNav.scss */
+/* line 71, ../sass/_topNav.scss */
 .navLinks a,
 .leftPushNav a {
   margin-right: -0.6em;
   padding: 1em 1.25em 1.3em 1.25em;
 }
-/* line 74, ../sass/_topNav.scss */
+/* line 75, ../sass/_topNav.scss */
 .navLinks a:hover,
 .leftPushNav a:hover {
   color: #d5eaea;
@@ -150,11 +150,11 @@ nav {
   transition: background-color 0.5s ease;
 }
 
-/* line 82, ../sass/_topNav.scss */
+/* line 83, ../sass/_topNav.scss */
 .active li {
   padding: 1em 1.25em 1.3em 1.25em;
 }
-/* line 86, ../sass/_topNav.scss */
+/* line 87, ../sass/_topNav.scss */
 .active a {
   color: #d5eaea;
   background-color: #4b6f6f;
@@ -163,24 +163,24 @@ nav {
 
 /*Media Queries*/
 @media screen and (max-width: 775px) {
-  /* line 97, ../sass/_topNav.scss */
+  /* line 98, ../sass/_topNav.scss */
   .show.left {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 
-  /* line 101, ../sass/_topNav.scss */
+  /* line 102, ../sass/_topNav.scss */
   .left {
     left: -250px;
     background: #4b6f6f;
   }
 
-  /* line 110, ../sass/_topNav.scss */
+  /* line 111, ../sass/_topNav.scss */
   nav li {
     display: block;
     padding: 1em 1.25em 1.3em 1.25em;
   }
 
-  /* line 117, ../sass/_topNav.scss */
+  /* line 118, ../sass/_topNav.scss */
   .leftPushNav {
     position: fixed;
     z-index: 3;
@@ -194,19 +194,19 @@ nav {
     background: #4b6f6f;
     box-shadow: inset -10px 0 30px -15px #2c4141;
   }
-  /* line 133, ../sass/_topNav.scss */
+  /* line 134, ../sass/_topNav.scss */
   .leftPushNav a {
     color: #5eafaf;
   }
 }
 /* line 20, ../sass/_iconList.scss */
 #iconList {
+  position: relative;
   display: inline;
   height: 100%;
-  margin: none;
 }
 
-/* line 30, ../sass/_iconList.scss */
+/* line 29, ../sass/_iconList.scss */
 #linkedIn {
   background: url("../images/linkedIn.svg") center;
   position: relative;
@@ -217,12 +217,12 @@ nav {
   margin: .4em .3em 1em .3em;
   float: clearfix;
 }
-/* line 35, ../sass/_iconList.scss */
+/* line 34, ../sass/_iconList.scss */
 #linkedIn:hover {
   background-color: #0077b5;
 }
 
-/* line 42, ../sass/_iconList.scss */
+/* line 41, ../sass/_iconList.scss */
 #bitBucket {
   background: url("../images/bitbucket-512px.svg") center;
   position: relative;
@@ -234,12 +234,12 @@ nav {
   float: clearfix;
   background-size: 1.4em 1.4em;
 }
-/* line 51, ../sass/_iconList.scss */
+/* line 50, ../sass/_iconList.scss */
 #bitBucket:hover {
   background-color: #205081;
 }
 
-/* line 56, ../sass/_iconList.scss */
+/* line 55, ../sass/_iconList.scss */
 #emailMe {
   background: url("../images/mail.svg") center;
   position: relative;
@@ -251,13 +251,13 @@ nav {
   float: clearfix;
   background-size: 1.5em 1.5em;
 }
-/* line 65, ../sass/_iconList.scss */
+/* line 64, ../sass/_iconList.scss */
 #emailMe:hover {
   background-color: #AA3939;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 73, ../sass/_iconList.scss */
+  /* line 72, ../sass/_iconList.scss */
   #iconList {
     display: flex;
     flex-direction: row;
@@ -265,35 +265,35 @@ nav {
     margin: 0;
   }
 
-  /* line 80, ../sass/_iconList.scss */
+  /* line 79, ../sass/_iconList.scss */
   #linkedIn {
     margin: 0em -1em 0em 0.25em;
     background-color: none;
   }
-  /* line 83, ../sass/_iconList.scss */
+  /* line 82, ../sass/_iconList.scss */
   #linkedIn:hover {
     background-color: #4b6f6f;
   }
 
-  /* line 87, ../sass/_iconList.scss */
+  /* line 86, ../sass/_iconList.scss */
   #bitBucket {
     margin: 0em -2em 0em -2em;
   }
-  /* line 89, ../sass/_iconList.scss */
+  /* line 88, ../sass/_iconList.scss */
   #bitBucket:hover {
     background-color: #4b6f6f;
   }
 
-  /* line 93, ../sass/_iconList.scss */
+  /* line 92, ../sass/_iconList.scss */
   #emailMe {
     margin: 0em -2em 0em -2em;
   }
-  /* line 96, ../sass/_iconList.scss */
+  /* line 95, ../sass/_iconList.scss */
   #emailMe:hover {
     background-color: #4b6f6f;
   }
 }
-/* line 18, ../sass/_bodyContent.scss */
+/* line 18, ../sass/_homeContent.scss */
 article {
   position: relative;
   width: auto;
@@ -305,13 +305,13 @@ article {
   margin-left: 3em;
   color: #eee;
 }
-/* line 26, ../sass/_bodyContent.scss */
+/* line 26, ../sass/_homeContent.scss */
 article p {
   width: 30em;
   margin-right: 5em;
 }
 
-/* line 34, ../sass/_bodyContent.scss */
+/* line 34, ../sass/_homeContent.scss */
 #hello {
   line-height: 1.3em;
   position: relative;
@@ -323,4 +323,24 @@ article p {
   width: 7em;
   height: 2em;
   margin: 1em 0em 0em 1em;
+}
+
+/* line 3, ../sass/_aboutContent.scss */
+#aboutTitle {
+  margin: 1.7em 0em .5em 2em;
+  font-size: 2.5em;
+}
+
+/* line 10, ../sass/_aboutContent.scss */
+#aboutSection {
+  width: 80%;
+  margin: 2em;
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+
+/* line 3, ../sass/_portfolioContent.scss */
+#portfolioTitle {
+  margin: 1.7em 0em .5em 2em;
+  font-size: 2.5em;
 }
