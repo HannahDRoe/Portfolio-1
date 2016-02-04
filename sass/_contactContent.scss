@@ -1,0 +1,51 @@
+$inputWidth: 30em;
+$inputHeight: 2em;
+
+
+#contact
+{
+	margin: 2em 0em 5em 8em;
+}
+
+
+form
+{
+	position: relative;
+	left: 30%;
+	height: 50em;
+}
+fieldset
+{
+	border: 0;
+}
+
+label
+{
+	display: none;
+}
+input
+{
+	margin-bottom: 1em;
+	width: $inputWidth;
+	height: $inputHeight;
+	
+}
+
+#email
+{
+
+}
+#message
+{
+	height: 5em;
+	width: $inputWidth;
+	height: 12em;
+}
+
+#submitBtn
+{
+	margin-top: 2em;
+	display: block;
+	width: 10em;
+	
+}
