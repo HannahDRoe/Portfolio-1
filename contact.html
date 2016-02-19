@@ -42,7 +42,7 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
-					<li class="active"><a href="email.html">Contact</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
 				</ul>
 				<ul id="iconList">
 					<li>
@@ -59,7 +59,7 @@
 		</header>
 		<main>
 			<h1 id="contact">Contact Me</h1>
-			<form>
+			<form action="form.php" medthod="post" role="form">
 				<fieldset>
 					<div>
 						<label for="name">Name</label>
@@ -72,6 +72,7 @@
 					<div>
 						<label for="message">Message</label>
 						<textarea id="message" name="message" placeholder="Message..."></textarea>
+						<input id="antiSpam" value=""/>
 						<input type="submit" value="Send Message" id="submitBtn">
 					</div>
 				</fieldset>

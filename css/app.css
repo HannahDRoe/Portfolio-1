@@ -2,7 +2,7 @@
 body {
   position: relative;
   font-family: Sans-serif;
-  height: 750px;
+  height: 1050px;
   margin: 0;
   padding: 0;
   font-size: 0.85em;
@@ -11,7 +11,7 @@ body {
 }
 /* line 24, ../sass/app.scss */
 body h1, body h2 {
-  font-weight: lighter;
+  font-weight: bolder;
 }
 
 /*Sytles for whole page*/
@@ -25,7 +25,7 @@ ul li {
 
 /* line 42, ../sass/app.scss */
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 @media screen and (max-width: 775px) {
@@ -41,19 +41,19 @@ a {
 /* Hamburger menu and Skip Links for Accessability*/
 /*Sass variables, also used in _topNav.scss*/
 /*Skip to Links*/
-/* line 9, ../sass/_hamburger.scss */
+/* line 9, ../sass/partials/navPartials/_hamburger.scss */
 .skipLinks {
   display: none;
 }
 
 /*Menu Hamburger block*/
-/* line 14, ../sass/_hamburger.scss */
+/* line 14, ../sass/partials/navPartials/_hamburger.scss */
 .navigation {
   margin: 0px 3px;
 }
 
 /*Menu Hamburger Bars*/
-/* line 20, ../sass/_hamburger.scss */
+/* line 20, ../sass/partials/navPartials/_hamburger.scss */
 .icon {
   display: block;
   width: 20px;
@@ -64,7 +64,7 @@ a {
 }
 
 /*Screen Reader Only*/
-/* line 32, ../sass/_hamburger.scss */
+/* line 32, ../sass/partials/navPartials/_hamburger.scss */
 .sr-only {
   position: absolute;
   overflow: hidden;
@@ -75,7 +75,7 @@ a {
 /*Media Queries*/
 @media screen and (max-width: 775px) {
   /*Skip to Links from*/
-  /* line 47, ../sass/_hamburger.scss */
+  /* line 47, ../sass/partials/navPartials/_hamburger.scss */
   .skipLinks {
     display: block;
     float: left;
@@ -85,7 +85,7 @@ a {
     color: #000;
   }
 
-  /* line 58, ../sass/_hamburger.scss */
+  /* line 58, ../sass/partials/navPartials/_hamburger.scss */
   button {
     height: 3.8em;
     margin: 0px;
@@ -100,7 +100,7 @@ a {
 /*colors for Navlinks and Header Backgrounds*/
 /*Active Link properties */
 /*Header*/
-/* line 29, ../sass/_topNav.scss */
+/* line 29, ../sass/partials/navPartials/_topNav.scss */
 header {
   height: 4em;
   width: 100%;
@@ -110,20 +110,20 @@ header {
 }
 
 /*Brand In top left corner*/
-/* line 40, ../sass/_topNav.scss */
+/* line 40, ../sass/partials/navPartials/_topNav.scss */
 .brand {
   font-family: Sans-serif;
   font-size: 1.75em;
   float: left;
   margin: .6em 2em .7em 1em;
 }
-/* line 48, ../sass/_topNav.scss */
+/* line 48, ../sass/partials/navPartials/_topNav.scss */
 .brand:active {
   color: #d5eaea;
 }
 
 /*Top Nav*/
-/* line 55, ../sass/_topNav.scss */
+/* line 55, ../sass/partials/navPartials/_topNav.scss */
 nav {
   font-size: 1.175em;
   float: left;
@@ -131,18 +131,18 @@ nav {
 }
 
 /*Top Nav Links*/
-/* line 68, ../sass/_topNav.scss */
+/* line 68, ../sass/partials/navPartials/_topNav.scss */
 .navLinks,
 .leftPushNav {
   display: inline;
 }
-/* line 71, ../sass/_topNav.scss */
+/* line 71, ../sass/partials/navPartials/_topNav.scss */
 .navLinks a,
 .leftPushNav a {
   margin-right: -0.6em;
   padding: 1em 1.25em 1.3em 1.25em;
 }
-/* line 75, ../sass/_topNav.scss */
+/* line 75, ../sass/partials/navPartials/_topNav.scss */
 .navLinks a:hover,
 .leftPushNav a:hover {
   color: #d5eaea;
@@ -150,11 +150,11 @@ nav {
   transition: background-color 0.5s ease;
 }
 
-/* line 83, ../sass/_topNav.scss */
+/* line 83, ../sass/partials/navPartials/_topNav.scss */
 .active li {
   padding: 1em 1.25em 1.3em 1.25em;
 }
-/* line 87, ../sass/_topNav.scss */
+/* line 87, ../sass/partials/navPartials/_topNav.scss */
 .active a {
   color: #d5eaea;
   background-color: #4b6f6f;
@@ -163,24 +163,24 @@ nav {
 
 /*Media Queries*/
 @media screen and (max-width: 775px) {
-  /* line 98, ../sass/_topNav.scss */
+  /* line 98, ../sass/partials/navPartials/_topNav.scss */
   .show.left {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 
-  /* line 102, ../sass/_topNav.scss */
+  /* line 102, ../sass/partials/navPartials/_topNav.scss */
   .left {
     left: -250px;
     background: #4b6f6f;
   }
 
-  /* line 111, ../sass/_topNav.scss */
+  /* line 111, ../sass/partials/navPartials/_topNav.scss */
   nav li {
     display: block;
     padding: 1em 1.25em 1.3em 1.25em;
   }
 
-  /* line 118, ../sass/_topNav.scss */
+  /* line 118, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav {
     position: fixed;
     z-index: 3;
@@ -194,19 +194,19 @@ nav {
     background: #4b6f6f;
     box-shadow: inset -10px 0 30px -15px #2c4141;
   }
-  /* line 134, ../sass/_topNav.scss */
+  /* line 134, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav a {
     color: #5eafaf;
   }
 }
-/* line 20, ../sass/_iconList.scss */
+/* line 20, ../sass/partials/navPartials/_iconList.scss */
 #iconList {
   position: relative;
   display: inline;
   height: 100%;
 }
 
-/* line 29, ../sass/_iconList.scss */
+/* line 29, ../sass/partials/navPartials/_iconList.scss */
 #linkedIn {
   background: url("../images/linkedIn.svg") center;
   position: relative;
@@ -217,12 +217,12 @@ nav {
   margin: .4em .3em 1em .3em;
   float: clearfix;
 }
-/* line 34, ../sass/_iconList.scss */
+/* line 34, ../sass/partials/navPartials/_iconList.scss */
 #linkedIn:hover {
   background-color: #0077b5;
 }
 
-/* line 41, ../sass/_iconList.scss */
+/* line 41, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket {
   background: url("../images/bitbucket-512px.svg") center;
   position: relative;
@@ -234,12 +234,12 @@ nav {
   float: clearfix;
   background-size: 1.4em 1.4em;
 }
-/* line 50, ../sass/_iconList.scss */
+/* line 50, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket:hover {
   background-color: #205081;
 }
 
-/* line 55, ../sass/_iconList.scss */
+/* line 55, ../sass/partials/navPartials/_iconList.scss */
 #emailMe {
   background: url("../images/mail.svg") center;
   position: relative;
@@ -251,13 +251,13 @@ nav {
   float: clearfix;
   background-size: 1.5em 1.5em;
 }
-/* line 64, ../sass/_iconList.scss */
+/* line 64, ../sass/partials/navPartials/_iconList.scss */
 #emailMe:hover {
   background-color: #AA3939;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 72, ../sass/_iconList.scss */
+  /* line 72, ../sass/partials/navPartials/_iconList.scss */
   #iconList {
     display: flex;
     flex-direction: row;
@@ -265,35 +265,35 @@ nav {
     margin: 0;
   }
 
-  /* line 79, ../sass/_iconList.scss */
+  /* line 79, ../sass/partials/navPartials/_iconList.scss */
   #linkedIn {
     margin: 0em -1em 0em 0.25em;
     background-color: none;
   }
-  /* line 82, ../sass/_iconList.scss */
+  /* line 82, ../sass/partials/navPartials/_iconList.scss */
   #linkedIn:hover {
     background-color: #4b6f6f;
   }
 
-  /* line 86, ../sass/_iconList.scss */
+  /* line 86, ../sass/partials/navPartials/_iconList.scss */
   #bitBucket {
     margin: 0em -2em 0em -2em;
   }
-  /* line 88, ../sass/_iconList.scss */
+  /* line 88, ../sass/partials/navPartials/_iconList.scss */
   #bitBucket:hover {
     background-color: #4b6f6f;
   }
 
-  /* line 92, ../sass/_iconList.scss */
+  /* line 92, ../sass/partials/navPartials/_iconList.scss */
   #emailMe {
     margin: 0em -2em 0em -2em;
   }
-  /* line 95, ../sass/_iconList.scss */
+  /* line 95, ../sass/partials/navPartials/_iconList.scss */
   #emailMe:hover {
     background-color: #4b6f6f;
   }
 }
-/* line 18, ../sass/_homeContent.scss */
+/* line 18, ../sass/partials/_homeContent.scss */
 article {
   position: relative;
   width: auto;
@@ -305,13 +305,13 @@ article {
   margin-left: 3em;
   color: #eee;
 }
-/* line 26, ../sass/_homeContent.scss */
+/* line 26, ../sass/partials/_homeContent.scss */
 article p {
   width: 30em;
   margin-right: 5em;
 }
 
-/* line 34, ../sass/_homeContent.scss */
+/* line 34, ../sass/partials/_homeContent.scss */
 #hello {
   line-height: 1.3em;
   position: relative;
@@ -325,13 +325,13 @@ article p {
   margin: 1em 0em 0em 1em;
 }
 
-/* line 3, ../sass/_aboutContent.scss */
+/* line 3, ../sass/partials/_aboutContent.scss */
 #aboutTitle {
   margin: 1.7em 0em .5em 2em;
   font-size: 2.5em;
 }
 
-/* line 10, ../sass/_aboutContent.scss */
+/* line 10, ../sass/partials/_aboutContent.scss */
 #aboutSection {
   width: 80%;
   margin: 2em;
@@ -339,49 +339,54 @@ article p {
   line-height: 1.4em;
 }
 
-/* line 3, ../sass/_portfolioContent.scss */
+/* line 3, ../sass/partials/_portfolioContent.scss */
 #portfolioTitle {
   margin: 1.7em 0em .5em 2em;
   font-size: 2.5em;
 }
 
-/* line 6, ../sass/_contactContent.scss */
+/* line 6, ../sass/partials/_contactContent.scss */
 #contact {
   margin: 2em 0em 5em 8em;
 }
 
-/* line 12, ../sass/_contactContent.scss */
+/* line 12, ../sass/partials/_contactContent.scss */
 form {
   position: relative;
   left: 30%;
   height: 50em;
 }
 
-/* line 18, ../sass/_contactContent.scss */
+/* line 18, ../sass/partials/_contactContent.scss */
 fieldset {
   border: 0;
 }
 
-/* line 23, ../sass/_contactContent.scss */
+/* line 23, ../sass/partials/_contactContent.scss */
 label {
   display: none;
 }
 
-/* line 27, ../sass/_contactContent.scss */
+/* line 27, ../sass/partials/_contactContent.scss */
 input {
   margin-bottom: 1em;
   width: 30em;
   height: 2em;
 }
 
-/* line 39, ../sass/_contactContent.scss */
+/* line 39, ../sass/partials/_contactContent.scss */
 #message {
   height: 5em;
   width: 30em;
   height: 12em;
 }
 
-/* line 46, ../sass/_contactContent.scss */
+/* line 46, ../sass/partials/_contactContent.scss */
+#antiSpam {
+  display: none;
+}
+
+/* line 51, ../sass/partials/_contactContent.scss */
 #submitBtn {
   margin-top: 2em;
   display: block;
