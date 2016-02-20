@@ -341,8 +341,21 @@ article p {
 
 /* line 3, ../sass/partials/_portfolioContent.scss */
 #portfolioTitle {
-  margin: 1.7em 0em .5em 2em;
+  margin: 1.7em 0em .5em 2.25em;
   font-size: 2.5em;
+}
+
+/* line 10, ../sass/partials/_portfolioContent.scss */
+.portfolioSect {
+  height: 200px;
+  width: 200px;
+  background-color: #D46A6A;
+  margin: 4em 3em 0em 0em;
+}
+
+/* line 17, ../sass/partials/_portfolioContent.scss */
+#rightSect {
+  margin-left: 3em;
 }
 
 /* line 6, ../sass/partials/_contactContent.scss */
