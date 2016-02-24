@@ -1,6 +1,6 @@
 
 // app for Contact form Validation
-var contactApp = angular.module('contactApp', [ngMessages]);
+var contactApp = angular.module('contactApp', ['ngMessages']);
 
 // controller for form
 
