@@ -358,50 +358,98 @@ article p {
   margin-left: 3em;
 }
 
-/* line 6, ../sass/partials/_contactContent.scss */
+/* line 7, ../sass/partials/_contactContent.scss */
 #contact {
-  margin: 2em 0em 5em 8em;
+  margin: 1.7em 0em .5em 2em;
+  font-size: 2.5em;
 }
 
-/* line 12, ../sass/partials/_contactContent.scss */
+/* line 15, ../sass/partials/_contactContent.scss */
 form {
   position: relative;
-  left: 30%;
+  left: 25%;
   height: 50em;
-}
-
-/* line 18, ../sass/partials/_contactContent.scss */
-fieldset {
-  border: 0;
+  width: 30em;
 }
 
 /* line 23, ../sass/partials/_contactContent.scss */
+fieldset {
+  margin-top: 20%;
+  border: 0;
+}
+
+/* line 29, ../sass/partials/_contactContent.scss */
 label {
   display: none;
 }
 
-/* line 27, ../sass/partials/_contactContent.scss */
+/* line 33, ../sass/partials/_contactContent.scss */
 input {
-  margin-bottom: 1em;
+  margin-bottom: .75em;
   width: 30em;
-  height: 2em;
+  height: 3em;
+  border-radius: 3px;
 }
 
-/* line 39, ../sass/partials/_contactContent.scss */
-#message {
+/* line 44, ../sass/partials/_contactContent.scss */
+textarea {
   height: 5em;
   width: 30em;
   height: 12em;
+  border-radius: 3px;
 }
 
-/* line 46, ../sass/partials/_contactContent.scss */
+/* line 53, ../sass/partials/_contactContent.scss */
 #antiSpam {
   display: none;
 }
 
-/* line 51, ../sass/partials/_contactContent.scss */
+/* line 58, ../sass/partials/_contactContent.scss */
 #submitBtn {
   margin-top: 2em;
   display: block;
   width: 10em;
+}
+
+/* line 65, ../sass/partials/_contactContent.scss */
+.messageContnr {
+  color: #D4CB6A;
+  margin: 0em 0em 1em 0em;
+}
+
+@media screen and (max-width: 775px) {
+  /* line 79, ../sass/partials/_contactContent.scss */
+  form {
+    position: relative;
+    left: 5%;
+    height: 50em;
+    width: 85%;
+    right: .5%;
+    margin-right: 0;
+  }
+
+  /* line 89, ../sass/partials/_contactContent.scss */
+  input {
+    margin-bottom: .75em;
+    width: 85%;
+    height: 3em;
+    border-radius: 3px;
+    padding: 0;
+  }
+
+  /* line 99, ../sass/partials/_contactContent.scss */
+  textarea {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 775px) {
+  /* line 111, ../sass/partials/_contactContent.scss */
+  form {
+    position: relative;
+    left: 2%;
+    height: 50em;
+    width: 85%;
+    right: 0;
+    margin-right: 0;
+  }
 }

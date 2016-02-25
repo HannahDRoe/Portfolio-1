@@ -60,14 +60,14 @@
 		</header>
 		<main>
 			<h1 id="contact">Contact Me</h1>
-			<form action="" medthod="post" role="form" name="contactForm" ng-submit="submitForm(contactForm.$valid)" novalidate>
+			<form action="form.php" medthod="post" role="form" name="contactForm" ng-submit="submitForm(contactForm.$valid)" novalidate>
 				<fieldset>
 					<div>
 						<label for="name">Name</label>
 						<input id="name" type="text" name="name" placeholder="Your Name" ng-model="name" required>
 
-							<div ng-messages="contactForm.name.$error" ng-if="contactForm.name.$pristine &&  contactForm.name.$touched">
-								<p ng-message="required">Your name please.</p>
+							<div  ng-messages="contactForm.name.$error" ng-if="contactForm.name.$pristine &&  contactForm.name.$touched">
+								<p class="messageContnr" ng-message="required">Your name please.</p>
 							</div>
 					</div>
 
@@ -75,8 +75,8 @@
 						<label for="email">Email Address</label>
 						<input id="email" type="email" name="email" placeholder="Your Email Address" ng-model="email" required>
 
-							<div ng-messages="contactForm.email.$error" ng-if="!contactForm.email.$pristine && contactForm.email.$invalid">
-								<p ng-message="email">Enter a valid email.</p>
+							<div ng-messages="contactForm.email.$error" ng-if="contactForm.email.$pristine && contactForm.email.$invalid && contactForm.email.$touched">
+								<p class="messageContnr" ng-message="email">Enter a valid email.</p>
 							</div>
 					</div>
 					<div>
@@ -84,7 +84,7 @@
 						<textarea id="message" name="message" placeholder="Message..." ng-model="message" required></textarea>
 						
 							<div ng-messages="contactForm.message.$error" ng-if="contactForm.message.$touched && contactForm.message.$pristine">
-								<p ng-message="required">Please leave your message.</p>
+								<p class="messageContnr" ng-message="required">Please leave your message.</p>
 							</div>
 
 						<input id="antiSpam" value=""/>

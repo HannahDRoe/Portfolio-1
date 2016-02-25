@@ -1,21 +1,27 @@
 $inputWidth: 30em;
-$inputHeight: 2em;
+$inputHeight: 3em;
+$boarderRadius: 3px;
 
 
 #contact
 {
-	margin: 2em 0em 5em 8em;
+	margin: 1.7em 0em .5em 2em;
+
+	font-size: 2.5em;
 }
 
 
 form
 {
 	position: relative;
-	left: 30%;
+	left: 25%;
 	height: 50em;
+	width: $inputWidth;
 }
+
 fieldset
 {
+	margin-top: 20%;
 	border: 0;
 }
 
@@ -25,21 +31,22 @@ label
 }
 input
 {
-	margin-bottom: 1em;
+	margin-bottom: .75em;
 	width: $inputWidth;
 	height: $inputHeight;
+	border-radius: $boarderRadius;
 	
 }
 
-#email
-{
 
-}
-#message
+
+textarea
 {
 	height: 5em;
 	width: $inputWidth;
 	height: 12em;
+	border-radius: $boarderRadius;
+
 }
 
 #antiSpam
@@ -55,8 +62,58 @@ input
 	
 }
 
-.ng-valid       {  }
-.ng-invalid     {  }
-.ng-pristine    {  }
-.ng-dirty       {  }
-.ng-touched     {  }
+.messageContnr {
+	color: #D4CB6A;
+	margin: 0em 0em 1em 0em;
+	
+
+}
+
+@media screen and (max-width: 775px)
+{
+	$inputWidth: 85%;
+	$inputHeight: 3em;
+
+
+	form
+	{
+		position: relative;
+		left: 5%;
+		height: 50em;
+		width: $inputWidth;
+		right: .5%;
+		margin-right: 0;
+	}
+
+	input
+	{
+		margin-bottom: .75em;
+		width: $inputWidth;
+		height: $inputHeight;
+		border-radius: $boarderRadius;
+		padding: 0;
+
+
+	}
+	textarea
+	{
+		width: $inputWidth;
+	}
+}
+
+@media screen and (max-width: 775px)
+{
+	$inputWidth: 85%;
+	$inputHeight: 3em;
+
+
+	form
+	{
+		position: relative;
+		left: 2%;
+		height: 50em;
+		width: $inputWidth;
+		right: 0;
+		margin-right: 0;
+	}
+}
