@@ -1,6 +1,6 @@
 
 $headerHeight: 4em;
-$linkBackground: #4b6f6f;
+
 
 
 @mixin imageMixin
@@ -72,29 +72,48 @@ $linkBackground: #4b6f6f;
 	#iconList{
 		display: flex;
         flex-direction: row;
-        padding:0;
-        margin: 0;
+        padding: 0;
+        
+
+        li
+        {
+            height: 2em;
+
+        }
+       
+        
 
 	}
     #linkedIn{
-        margin: 0em -1em 0em .25em;
-        background-color: none;
-        &:hover{
+    
+        &:hover
+    {
         background-color: $linkBackground;
-        }
+
+    }
+
     }
     #bitBucket{
-        margin: 0em -2em 0em -2em;
-        &:hover{
+        
+        background-color: none;
+
+        &:hover
+        {
         background-color: $linkBackground;
         }
+            
+        
     }
     #emailMe{
 
-    margin: 0em -2em 0em -2em;
-        &:hover{
+        background-color: none;
+
+        &:hover
+        {
         background-color: $linkBackground;
+
         }
+        
     }
 }
 

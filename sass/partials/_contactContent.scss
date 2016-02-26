@@ -35,6 +35,9 @@ input
 	width: $inputWidth;
 	height: $inputHeight;
 	border-radius: $boarderRadius;
+	border: 1px #2E4172 solid;
+
+	box-shadow: 0;
 	
 }
 
@@ -46,6 +49,7 @@ textarea
 	width: $inputWidth;
 	height: 12em;
 	border-radius: $boarderRadius;
+	border: 1px #2E4172 solid;
 
 }
 
@@ -59,6 +63,8 @@ textarea
 	margin-top: 2em;
 	display: block;
 	width: 10em;
+	background-color: #2E4172;
+	color: #eee;
 	
 }
 

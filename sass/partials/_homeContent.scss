@@ -5,27 +5,26 @@
     line-height: 1.3em;
 
     position: relative;
-
-    display: flex;
-    flex-direction: row;
-
     margin-left: 3em;
 
-    color: #eee;
+    
 }
 
-article
+
+#home
 {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 
-    width: auto;
-    height: auto;
+    margin: 4em 0 0 5em;
 
-    @include contentPosition;
     p
     {
         width: 30em;
         margin-right: 5em;
+        align-content: flex-end;
+
     }
 }
 
@@ -33,7 +32,7 @@ article
 #hello /* It's me */
 {
     @include contentPosition;
-    font-size: 7em;
+    font-size: 6em;
 
     width: 7em;
     height: 2em;

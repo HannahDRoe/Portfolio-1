@@ -6,14 +6,36 @@
 	font-size: 2.5em;
 }
 
-.portfolioSect
+#portfolioArt
 {
-	 height: 200px;
-	 width: 200px;
-	 background-color: #D46A6A;
-	 margin: 4em 3em 0em 0em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
-#rightSect
+
+.portfolioSect
+{	
+	height: 200px;
+	width: 200px;
+	background-color: #D46A6A;
+	margin-right: 5em;
+	 
+}
+
+@media screen and (max-width: 775px)
 {
-	margin-left: 3em;
+	#portfolioArt
+	{
+		flex-direction: column;
+		margin-left: 10%;
+		width: 100%;
+	}
+
+	.portfolioSect
+	{
+		width: 80%;
+		margin-top: 1.5em;
+		margin-right: 0;
+	}
+
 }
