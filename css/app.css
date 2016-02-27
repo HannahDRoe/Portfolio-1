@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 0.9em;
-  color: #f32328;
+  color: #38424b;
 }
 /* line 24, ../sass/app.scss */
 body h1, body h2 {
@@ -25,14 +25,15 @@ ul li {
 /* line 42, ../sass/app.scss */
 a {
   text-decoration: none !important;
+  color: #38424b;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 52, ../sass/app.scss */
+  /* line 53, ../sass/app.scss */
   article {
     flex-direction: column;
   }
-  /* line 54, ../sass/app.scss */
+  /* line 55, ../sass/app.scss */
   article p {
     width: auto;
   }
@@ -112,7 +113,7 @@ header {
 }
 
 /*Brand In top left corner*/
-/* line 45, ../sass/partials/navPartials/_topNav.scss */
+/* line 47, ../sass/partials/navPartials/_topNav.scss */
 .brand {
   font-family: Sans-serif;
   font-size: 1.75em;
@@ -122,12 +123,11 @@ header {
 }
 
 /*Top Nav*/
-/* line 58, ../sass/partials/navPartials/_topNav.scss */
+/* line 60, ../sass/partials/navPartials/_topNav.scss */
 nav {
   font-size: 1.175em;
   float: left;
   margin-top: 1em;
-  color: #f32328;
 }
 
 /*Top Nav Links*/
@@ -201,7 +201,7 @@ nav {
   }
   /* line 144, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav a {
-    color: #f76c6f;
+    color: #596977;
   }
 }
 /* line 20, ../sass/partials/navPartials/_iconList.scss */
@@ -350,25 +350,28 @@ nav {
 
 /* line 17, ../sass/partials/_portfolioContent.scss */
 .portfolioSect {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   background-color: #D46A6A;
+  margin-top: 5em;
   margin-right: 5em;
+  border-radius: 10em;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 28, ../sass/partials/_portfolioContent.scss */
+  /* line 30, ../sass/partials/_portfolioContent.scss */
   #portfolioArt {
     flex-direction: column;
     margin-left: 10%;
     width: 100%;
   }
 
-  /* line 35, ../sass/partials/_portfolioContent.scss */
+  /* line 37, ../sass/partials/_portfolioContent.scss */
   .portfolioSect {
     width: 80%;
     margin-top: 1.5em;
     margin-right: 0;
+    border-radius: none;
   }
 }
 /* line 7, ../sass/partials/_contactContent.scss */
@@ -427,16 +430,17 @@ textarea {
   width: 10em;
   background-color: #2E4172;
   color: #eee;
+  cursor: pointer;
 }
 
-/* line 71, ../sass/partials/_contactContent.scss */
+/* line 72, ../sass/partials/_contactContent.scss */
 .messageContnr {
   color: #D4CB6A;
   margin: 0em 0em 1em 0em;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 85, ../sass/partials/_contactContent.scss */
+  /* line 86, ../sass/partials/_contactContent.scss */
   form {
     position: relative;
     left: 5%;
@@ -446,7 +450,7 @@ textarea {
     margin-right: 0;
   }
 
-  /* line 95, ../sass/partials/_contactContent.scss */
+  /* line 96, ../sass/partials/_contactContent.scss */
   input {
     margin-bottom: .75em;
     width: 85%;
@@ -455,13 +459,13 @@ textarea {
     padding: 0;
   }
 
-  /* line 105, ../sass/partials/_contactContent.scss */
+  /* line 106, ../sass/partials/_contactContent.scss */
   textarea {
     width: 85%;
   }
 }
 @media screen and (max-width: 775px) {
-  /* line 117, ../sass/partials/_contactContent.scss */
+  /* line 118, ../sass/partials/_contactContent.scss */
   form {
     position: relative;
     left: 2%;

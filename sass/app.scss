@@ -1,6 +1,6 @@
 
 $mainFont: Sans-serif;
-$mainFontColor: #F32328;
+$mainFontColor: #38424b;
 $mainFontSize: .90em;
 
 
@@ -41,6 +41,7 @@ ul li
 a
 {
     text-decoration: none !important;
+    color: $mainFontColor;
 }
 
 
