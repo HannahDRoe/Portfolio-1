@@ -50,6 +50,8 @@ textarea
 	height: 12em;
 	border-radius: $boarderRadius;
 	border: 1px #2E4172 solid;
+	margin-bottom: .75em;
+
 
 }
 
@@ -70,8 +72,11 @@ textarea
 }
 
 .messageContnr {
-	color: #D4CB6A;
-	margin: 0em 0em 1em 0em;
+	color: #9F6000;
+    background-color: #FEEFB3;
+    border-radius: .5em;
+    margin:.25em .5em 1.25em .5em;
+    padding: .5em;
 	
 
 }
