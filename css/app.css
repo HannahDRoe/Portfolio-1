@@ -1,4 +1,4 @@
-/* line 9, ../sass/app.scss */
+/* line 8, ../sass/app.scss */
 body {
   position: relative;
   font-family: Sans-serif;
@@ -8,51 +8,44 @@ body {
   font-size: 0.9em;
   color: #38424b;
 }
+
 /* line 24, ../sass/app.scss */
-body h1, body h2 {
+h1, h2 {
   font-weight: bolder;
 }
 
-/*Sytles for whole page*/
-/* line 31, ../sass/app.scss */
+/* line 29, ../sass/app.scss */
 ul li {
   display: inline;
   padding: none;
-  list-style: none;
-  text-decoration: none;
 }
 
-/* line 42, ../sass/app.scss */
+/* line 38, ../sass/app.scss */
 a {
   text-decoration: none !important;
   color: #38424b;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 53, ../sass/app.scss */
+  /* line 47, ../sass/app.scss */
   article {
     flex-direction: column;
   }
-  /* line 55, ../sass/app.scss */
+  /* line 49, ../sass/app.scss */
   article p {
     width: auto;
   }
 }
-/* Hamburger menu and Skip Links for Accessability*/
-/*Sass variables, also used in _topNav.scss*/
-/*Skip to Links*/
 /* line 9, ../sass/partials/navPartials/_hamburger.scss */
 .skipLinks {
   display: none;
 }
 
-/*Menu Hamburger block*/
 /* line 14, ../sass/partials/navPartials/_hamburger.scss */
 .navigation {
   margin: 0px 3px;
 }
 
-/*Menu Hamburger Bars*/
 /* line 20, ../sass/partials/navPartials/_hamburger.scss */
 .icon {
   display: block;
@@ -63,7 +56,6 @@ a {
   border-radius: 1px;
 }
 
-/*Screen Reader Only*/
 /* line 32, ../sass/partials/navPartials/_hamburger.scss */
 .sr-only {
   position: absolute;
@@ -72,9 +64,7 @@ a {
   border: 0;
 }
 
-/*Media Queries*/
-@media screen and (max-width: 775px) {
-  /*Skip to Links from*/
+@media screen and (max-width: 768px) {
   /* line 47, ../sass/partials/navPartials/_hamburger.scss */
   .skipLinks {
     display: block;
@@ -85,84 +75,72 @@ a {
     color: #000;
   }
 
-  /* line 58, ../sass/partials/navPartials/_hamburger.scss */
+  /* line 59, ../sass/partials/navPartials/_hamburger.scss */
   button {
     height: 3.8em;
     margin: 0px;
     padding: 0px;
-    background-color: #5e8fa1;
+    background-color: #3c768c;
     border: none;
   }
 }
-/*Header Nav with Links and Brand. With Media Queries*/
-/*Individual Sides Padding*/
-/*Padding for all sides*/
-/*colors for Navlinks and Header Backgrounds*/
-/*Active Link properties */
-/*Header*/
-/* line 30, ../sass/partials/navPartials/_topNav.scss */
+/* line 25, ../sass/partials/navPartials/_topNav.scss */
 header {
+  position: static;
   height: 4em;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #5e8fa1;
+  display: flex;
+  background-color: #3c768c;
   webkit-box-shadow: 0 5px 5px -5px #777777;
   moz-box-shadow: 0 5px 5px -5px #777777;
   box-shadow: 0 5px 5px -5px #777777;
 }
 
-/*Brand In top left corner*/
-/* line 47, ../sass/partials/navPartials/_topNav.scss */
+/* line 45, ../sass/partials/navPartials/_topNav.scss */
 .brand {
   font-family: Sans-serif;
-  font-size: 1.75em;
-  float: left;
-  margin: .6em 2em .7em 1em;
+  font-size: 1.7em;
+  margin: .5em 1em .5em 1em;
   color: white;
 }
 
-/*Top Nav*/
-/* line 60, ../sass/partials/navPartials/_topNav.scss */
+/* line 58, ../sass/partials/navPartials/_topNav.scss */
 nav {
   font-size: 1.175em;
   float: left;
   margin-top: 1em;
 }
 
-/*Top Nav Links*/
-/* line 74, ../sass/partials/navPartials/_topNav.scss */
+/* line 72, ../sass/partials/navPartials/_topNav.scss */
 .navLinks,
 .leftPushNav {
   display: inline;
+  text-decoration: none;
 }
-/* line 78, ../sass/partials/navPartials/_topNav.scss */
-.navLinks a,
-.leftPushNav a {
-  margin-right: -0.6em;
-  padding: 1em 1.25em 1.3em 1.25em;
+
+/* line 80, ../sass/partials/navPartials/_topNav.scss */
+.navLinkA {
+  margin-left: -0.3em;
+  padding: 1em 1em 1.3em 1em;
 }
-/* line 83, ../sass/partials/navPartials/_topNav.scss */
-.navLinks a:hover,
-.leftPushNav a:hover {
+/* line 85, ../sass/partials/navPartials/_topNav.scss */
+.navLinkA:hover {
   color: white;
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
-/* line 91, ../sass/partials/navPartials/_topNav.scss */
-.active li {
-  padding: 1em 1.25em 1.3em 1.25em;
-}
-/* line 95, ../sass/partials/navPartials/_topNav.scss */
-.active a {
+/* line 92, ../sass/partials/navPartials/_topNav.scss */
+.active {
   color: white;
   background-color: #94bac9;
   transition: background-color 0.5s ease;
+  padding: 1em 1em 1.3em 1em;
 }
 
-/*Media Queries*/
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 768px) {
   /* line 106, ../sass/partials/navPartials/_topNav.scss */
   .show.left {
     -webkit-transform: translate3d(250px, 0, 0);
@@ -174,18 +152,28 @@ nav {
     background: #94bac9;
   }
 
-  /* line 117, ../sass/partials/navPartials/_topNav.scss */
+  /* line 118, ../sass/partials/navPartials/_topNav.scss */
   nav {
     font-size: 1em;
     font-weight: bold;
   }
-  /* line 121, ../sass/partials/navPartials/_topNav.scss */
-  nav li {
+
+  /* line 125, ../sass/partials/navPartials/_topNav.scss */
+  .navLinkA {
     display: block;
-    padding: 1em 1.25em 1.3em 1.25em;
+    padding: 1em;
+    margin-left: .75em;
   }
 
-  /* line 128, ../sass/partials/navPartials/_topNav.scss */
+  /* line 134, ../sass/partials/navPartials/_topNav.scss */
+  .brand {
+    font-family: Sans-serif;
+    font-size: 1.7em;
+    margin: .5em 1em .5em 1em;
+    color: white;
+  }
+
+  /* line 147, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav {
     position: fixed;
     z-index: 3;
@@ -199,19 +187,20 @@ nav {
     background: #94bac9;
     box-shadow: inset -10px 0 30px -15px #6199af;
   }
-  /* line 144, ../sass/partials/navPartials/_topNav.scss */
+  /* line 164, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav a {
     color: #596977;
   }
 }
-/* line 20, ../sass/partials/navPartials/_iconList.scss */
+/* line 23, ../sass/partials/navPartials/_iconList.scss */
 #iconList {
   position: relative;
   display: inline;
+  list-style: none;
   height: 100%;
 }
 
-/* line 29, ../sass/partials/navPartials/_iconList.scss */
+/* line 36, ../sass/partials/navPartials/_iconList.scss */
 #linkedIn {
   background: url("../images/linkedIn.svg") center;
   position: relative;
@@ -221,13 +210,14 @@ nav {
   background-size: 1.3em 1.3em;
   margin: .4em .3em 1em .3em;
   float: clearfix;
+  list-style: none;
 }
-/* line 34, ../sass/partials/navPartials/_iconList.scss */
+/* line 41, ../sass/partials/navPartials/_iconList.scss */
 #linkedIn:hover {
   background-color: #0077b5;
 }
 
-/* line 41, ../sass/partials/navPartials/_iconList.scss */
+/* line 49, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket {
   background: url("../images/bitbucket-512px.svg") center;
   position: relative;
@@ -237,14 +227,15 @@ nav {
   background-size: 1.3em 1.3em;
   margin: .4em .3em 1em .3em;
   float: clearfix;
+  list-style: none;
   background-size: 1.4em 1.4em;
 }
-/* line 50, ../sass/partials/navPartials/_iconList.scss */
+/* line 58, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket:hover {
   background-color: #205081;
 }
 
-/* line 55, ../sass/partials/navPartials/_iconList.scss */
+/* line 65, ../sass/partials/navPartials/_iconList.scss */
 #emailMe {
   background: url("../images/mail.svg") center;
   position: relative;
@@ -254,63 +245,50 @@ nav {
   background-size: 1.3em 1.3em;
   margin: .4em .3em 1em .3em;
   float: clearfix;
+  list-style: none;
   background-size: 1.5em 1.5em;
 }
-/* line 64, ../sass/partials/navPartials/_iconList.scss */
+/* line 74, ../sass/partials/navPartials/_iconList.scss */
 #emailMe:hover {
   background-color: #AA3939;
 }
 
-@media screen and (max-width: 775px) {
-  /* line 72, ../sass/partials/navPartials/_iconList.scss */
+@media screen and (max-width: 768px) {
+  /* line 85, ../sass/partials/navPartials/_iconList.scss */
   #iconList {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
+    position: relative;
+    display: inline-block;
+    padding: 1em 0;
   }
-  /* line 79, ../sass/partials/navPartials/_iconList.scss */
+  /* line 94, ../sass/partials/navPartials/_iconList.scss */
   #iconList li {
-    height: 2em;
+    padding: 1em;
   }
 
-  /* line 90, ../sass/partials/navPartials/_iconList.scss */
+  /* line 106, ../sass/partials/navPartials/_iconList.scss */
   #linkedIn:hover {
     background-color: #94bac9;
   }
 
-  /* line 96, ../sass/partials/navPartials/_iconList.scss */
+  /* line 114, ../sass/partials/navPartials/_iconList.scss */
   #bitBucket {
     background-color: none;
   }
-  /* line 101, ../sass/partials/navPartials/_iconList.scss */
+  /* line 119, ../sass/partials/navPartials/_iconList.scss */
   #bitBucket:hover {
     background-color: #94bac9;
   }
 
-  /* line 107, ../sass/partials/navPartials/_iconList.scss */
+  /* line 126, ../sass/partials/navPartials/_iconList.scss */
   #emailMe {
     background-color: none;
   }
-  /* line 112, ../sass/partials/navPartials/_iconList.scss */
+  /* line 131, ../sass/partials/navPartials/_iconList.scss */
   #emailMe:hover {
     background-color: #94bac9;
   }
 }
-/* line 15, ../sass/partials/_homeContent.scss */
-#home {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin: 4em 0 0 5em;
-}
-/* line 23, ../sass/partials/_homeContent.scss */
-#home p {
-  width: 30em;
-  margin-right: 5em;
-  align-content: flex-end;
-}
-
-/* line 33, ../sass/partials/_homeContent.scss */
+/* line 5, ../sass/partials/_index.scss */
 #hello {
   line-height: 1.3em;
   position: relative;
@@ -321,121 +299,213 @@ nav {
   margin: 1em 0em 0em 1em;
 }
 
-/* line 3, ../sass/partials/_aboutContent.scss */
+/* line 23, ../sass/partials/_index.scss */
+#home {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 4em 0 0 5em;
+}
+
+/* line 33, ../sass/partials/_index.scss */
+#whatIDo {
+  position: relative;
+  width: 30em;
+  margin-right: 3em;
+}
+
+/* line 40, ../sass/partials/_index.scss */
+#contactMe {
+  position: relative;
+  width: 30em;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 49, ../sass/partials/_index.scss */
+  #hello {
+    font-size: 4em;
+    width: 4em;
+    overflow: none;
+  }
+
+  /* line 59, ../sass/partials/_index.scss */
+  #home {
+    flex-direction: column;
+    margin-top: 0;
+    width: 80%;
+  }
+
+  /* line 67, ../sass/partials/_index.scss */
+  #whatIDo {
+    width: 15em;
+  }
+
+  /* line 72, ../sass/partials/_index.scss */
+  #contactMe {
+    width: 15em;
+  }
+}
+/* line 6, ../sass/partials/_about.scss */
 #aboutTitle {
+  position: relative;
   margin: 1.7em 0em .5em 2em;
   font-size: 2.5em;
 }
 
-/* line 10, ../sass/partials/_aboutContent.scss */
-#aboutSection {
-  width: 80%;
-  margin: 2em;
-  font-size: 1.3em;
+/* line 14, ../sass/partials/_about.scss */
+#aboutArticle {
+  position: relative;
+  left: 26%;
+  margin-top: 2em;
+  height: 100%;
+  width: 30em;
   line-height: 1.4em;
+  font-size: 1.2em;
 }
 
-/* line 3, ../sass/partials/_portfolioContent.scss */
+/* line 29, ../sass/partials/_about.scss */
+#aboutP #skillSetSect {
+  left: 25%;
+  width: 100%;
+}
+
+/* line 36, ../sass/partials/_about.scss */
+.skillSetLi {
+  display: list-item;
+  list-style-type: circle;
+}
+
+@media screen and (max-width: 775px) {
+  /* line 44, ../sass/partials/_about.scss */
+  #aboutTitle {
+    padding-right: 0;
+    margin: .25em;
+  }
+
+  /* line 51, ../sass/partials/_about.scss */
+  #aboutArticle {
+    position: relative;
+    left: 5%;
+    height: 100%;
+    width: 16em;
+  }
+}
+/* line 7, ../sass/partials/_portfolio.scss */
 #portfolioTitle {
   margin: 1.7em 0em .5em 2.25em;
   font-size: 2.5em;
 }
 
-/* line 10, ../sass/partials/_portfolioContent.scss */
+/* line 15, ../sass/partials/_portfolio.scss */
 #portfolioArt {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 5em 1em;
 }
 
-/* line 17, ../sass/partials/_portfolioContent.scss */
+/* line 24, ../sass/partials/_portfolio.scss */
 .portfolioSect {
-  height: 300px;
-  width: 300px;
-  background-color: #D46A6A;
-  margin-top: 5em;
-  margin-right: 5em;
-  border-radius: 10em;
+  height: 200px;
+  width: 250px;
+  background-color: #3c768c;
+  margin-right: 3em;
+  border-radius: .25em;
 }
 
-@media screen and (max-width: 775px) {
-  /* line 30, ../sass/partials/_portfolioContent.scss */
+/* line 33, ../sass/partials/_portfolio.scss */
+#rightSect {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 42, ../sass/partials/_portfolio.scss */
   #portfolioArt {
     flex-direction: column;
     margin-left: 10%;
-    width: 100%;
+    width: 80%;
   }
 
-  /* line 37, ../sass/partials/_portfolioContent.scss */
+  /* line 50, ../sass/partials/_portfolio.scss */
   .portfolioSect {
-    width: 80%;
+    width: 100%;
     margin-top: 1.5em;
     margin-right: 0;
+    padding-left: .25em;
     border-radius: none;
   }
 }
-/* line 7, ../sass/partials/_contactContent.scss */
+/* line 9, ../sass/partials/_contact.scss */
 #contact {
   margin: 1.7em 0em .5em 2em;
   font-size: 2.5em;
 }
 
-/* line 15, ../sass/partials/_contactContent.scss */
+/* line 17, ../sass/partials/_contact.scss */
 form {
   position: relative;
   left: 25%;
-  height: 50em;
+  margin-top: 7em;
+  height: 100%;
   width: 30em;
 }
 
-/* line 23, ../sass/partials/_contactContent.scss */
+/* line 27, ../sass/partials/_contact.scss */
 fieldset {
-  margin-top: 20%;
   border: 0;
+  width: 100%;
 }
 
-/* line 29, ../sass/partials/_contactContent.scss */
+/* line 33, ../sass/partials/_contact.scss */
+#nameDiv, #emailDiv, #messageDiv {
+  width: 100%;
+}
+
+/* line 40, ../sass/partials/_contact.scss */
 label {
   display: none;
 }
 
-/* line 33, ../sass/partials/_contactContent.scss */
+/* line 47, ../sass/partials/_contact.scss */
 input {
   margin-bottom: .75em;
   width: 30em;
   height: 3em;
   border-radius: 3px;
-  border: 1px #2E4172 solid;
+  border: 1px #2e4172 solid;
   box-shadow: 0;
 }
 
-/* line 47, ../sass/partials/_contactContent.scss */
+/* line 60, ../sass/partials/_contact.scss */
 textarea {
   height: 5em;
   width: 30em;
   height: 12em;
   border-radius: 3px;
-  border: 1px #2E4172 solid;
+  border: 1px #2e4172 solid;
   margin-bottom: .75em;
 }
 
-/* line 59, ../sass/partials/_contactContent.scss */
+/* line 73, ../sass/partials/_contact.scss */
 #antiSpam {
   display: none;
 }
 
-/* line 64, ../sass/partials/_contactContent.scss */
-#submitBtn {
+/* line 79, ../sass/partials/_contact.scss */
+#submit {
   margin-top: 2em;
   display: block;
   width: 10em;
-  background-color: #2E4172;
+  background-color: #2e4172;
   color: #eee;
   cursor: pointer;
 }
 
-/* line 74, ../sass/partials/_contactContent.scss */
+/* line 90, ../sass/partials/_contact.scss */
 .messageContnr {
+  position: relative;
+  width: 60%;
   color: #9F6000;
   background-color: #FEEFB3;
   border-radius: .5em;
@@ -443,39 +513,51 @@ textarea {
   padding: .5em;
 }
 
-@media screen and (max-width: 775px) {
-  /* line 91, ../sass/partials/_contactContent.scss */
-  form {
-    position: relative;
-    left: 5%;
-    height: 50em;
-    width: 85%;
-    right: .5%;
+/* line 102, ../sass/partials/_contact.scss */
+#thankYouMessage {
+  height: 10em;
+  width: 50%;
+  margin: 2em auto;
+  padding: 2em;
+  text-align: center;
+  border-radius: 0.25em;
+  background: #94BAC9;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 132, ../sass/partials/_contact.scss */
+  #contact {
+    margin: 1em 0em 0em 2em;
+    font-size: 2.5em;
+  }
+
+  /* line 138, ../sass/partials/_contact.scss */
+  fieldset {
+    border: 0;
+    width: 100%;
     margin-right: 0;
   }
 
-  /* line 101, ../sass/partials/_contactContent.scss */
+  /* line 146, ../sass/partials/_contact.scss */
+  form {
+    position: absolute;
+    height: 30em;
+    width: 23em;
+    margin: 2em 0 0 1em;
+    left: .5%;
+  }
+
+  /* line 157, ../sass/partials/_contact.scss */
   input {
     margin-bottom: .75em;
-    width: 85%;
+    width: 75%;
     height: 3em;
     border-radius: 3px;
     padding: 0;
   }
 
-  /* line 111, ../sass/partials/_contactContent.scss */
+  /* line 169, ../sass/partials/_contact.scss */
   textarea {
-    width: 85%;
-  }
-}
-@media screen and (max-width: 775px) {
-  /* line 123, ../sass/partials/_contactContent.scss */
-  form {
-    position: relative;
-    left: 2%;
-    height: 50em;
-    width: 85%;
-    right: 0;
-    margin-right: 0;
+    width: 75%;
   }
 }

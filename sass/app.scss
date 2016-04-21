@@ -1,10 +1,9 @@
-
+//Sass Variables 
 $mainFont: Sans-serif;
 $mainFontColor: #38424b;
 $mainFontSize: .90em;
 
-
-
+//Styles for the whole page 
 body
 {
 
@@ -18,35 +17,30 @@ body
     font-size: $mainFontSize;
 
     color: $mainFontColor;
-    
-
-    h1, h2
-    {
-        font-weight: bolder;
-    }
+  
 }
-
-/*Sytles for whole page*/
+//styles for h's 
+h1, h2
+{
+    font-weight: bolder;
+}
+//Sytles for Lists
 ul li
 {
     display: inline;
 
     padding: none;
 
-    list-style: none; 
-
-    text-decoration: none;
+   
 }
-
+//Styles for links
 a
 {
     text-decoration: none !important;
     color: $mainFontColor;
 }
 
-
-
-
+//Media Query 
 @media screen and (max-width: 775px)
 {
     article
@@ -58,11 +52,12 @@ a
     
     }
 }
+// Partials! 
 
 @import 'partials/navPartials/_hamburger.scss';
 @import 'partials/navPartials/_topNav.scss';
 @import 'partials/navPartials/_iconList.scss';
-@import 'partials/_homeContent.scss';
-@import 'partials/_aboutContent.scss';
-@import 'partials/_portfolioContent.scss';
-@import 'partials/_contactContent.scss';
+@import 'partials/_index.scss';
+@import 'partials/_about.scss';
+@import 'partials/_portfolio.scss';
+@import 'partials/_contact.scss';

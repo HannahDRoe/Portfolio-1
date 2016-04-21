@@ -21,6 +21,7 @@
 	</head>
 	<body>
 		<header id="top" ng-controller="navCtrl" class="ng-scope">
+			<!-- Hamburger Button -->
 			<ul class="skipLinks">
 				<li class="navigation">
 					<button ng-click="showLeft($event)">
@@ -36,46 +37,70 @@
 					<a href="#page">Skip to Content</a>
 				</li>
 			</ul>
+
+			<!-- Brand Top Left -->
 			<a class="brand" href="index.html">Hannah Roe</a>
+
+			<!-- Top Navigation -->
 			<nav id="nav"  visible="leftVisible" alignment="left">
 				<ul class="navLinks ng-isolate-scope" >
-					<li><a href="index.html">Home</a></li>
-					<li class= "active"><a href="about.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.html" class="navLinkA">Home</a></li>
+					<li><a href="about.html" class="active navLinkA">About</a></li>
+					<li><a href="portfolio.html" class="navLinkA">Portfolio</a></li>
+					<li><a href="contact.html" class="navLinkA">Contact</a></li>
 				</ul>
+
+				<!--Top Right Social Icons -->
 				<ul id="iconList">
 					<li>
-						<a id="linkedIn" href="http://www.linkedin.com" target="_blank"></a>
+						<a id="linkedIn" href="https://www.linkedin.com/in/hannahdroe" target="_blank"></a>
 					</li>
 					<li>
-						<a id="bitBucket" href="http://www.bitbucket.org" target="_blank"></a>
+						<a id="bitBucket" href="http://www.bitbucket.org/hannahdroe/" target="_blank"></a>
 					</li>
 					<li>
-						<a id="emailMe"href=""></a>
+						<a id="emailMe"href="contact.html"></a>
 					</li>
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<h1 id="aboutTitle">About Me</h1>
-			<article class="page">
-				<section>
-					<p id='aboutSection'>I am a Front End Developer in the Salt Lake City area. I relish the probblem solving and challenges that make this field exciting. Making sites that anyone and everyone can use with ease it what makes it all worth while.  
-					<br>
-					<br>
-					I have a dregree from the University of Kentucky in Dietetics (Human Nutrtion and Food Science) and graduated cum laude. Through hardwork and determination and lots of Google searches I've taught myself the art of Front End Development. 
-					<br>
-					<br>
-					
 
-					 </p>
+		<!-- Main Content -->
+		<main>
+
+			<h1 id="aboutTitle">About Me</h1>
+			
+			<!-- About Me Portion --> 
+			<article id="aboutArticle">
+				<section>
+				<p id='aboutP'>I am a Front End Developer in the Salt Lake City area. I relish the probblem solving and challenges that make this field exciting. Making sites that anyone and everyone can use with ease it what it's all about.  
+					<br>
+					<br>
+				I have a dregree from the University of Kentucky in Dietetics (Human Nutrtion and Food Science) and graduated cum laude. Through hardwork and determination and lots of Google searches I've taught myself the art of Front End Development. 
+					
+				 </p>
+				 
+				 <div id="skillSetSect">
+					 <p> My Current Skillset Includes: </p>
+					 <ul id="skillSetUl">
+					 <li class="skillSetLi">HTML</li>
+					 <li class="skillSetLi">CSS</li>
+					 <li class="skillSetLi">Javascript</li>
+						 <ul>
+						 <li class="skillSetLi">jQuery</li>
+						 <li class="skillSetLi">Angular</li>
+						 </ul>
+					 <li class="skillSetLi">Sass</li>
+					 <li class="skillSetLi">HTML</li>
+					 </ul>
+				 </div>
 				</section>
 			</article>
+
 		</main>
 	<footer></footer>
 
-
+	<!-- Javascript! --> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	
 	<script src="../Portfolio/js/app.js" ></script>

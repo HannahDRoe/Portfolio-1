@@ -1,0 +1,76 @@
+
+
+// Top Greeting
+#hello // It's me 
+{
+    line-height: 1.3em;
+
+    position: relative;
+    margin-left: 3em;
+    font-size: 6em;
+
+    width: 7em;
+    height: 2em;
+
+    margin: 1em 0em 0em 1em;
+    
+
+    
+}
+
+// article that holds Who I am and Contact paragraphs
+#home
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+
+    margin: 4em 0 0 5em;
+}
+//Who I am and Contact
+#whatIDo
+{
+    position: relative;
+    width: 30em;
+    margin-right: 3em;
+}
+
+#contactMe
+{
+    position: relative;
+    width: 30em;
+}
+
+@media screen and (max-width: 768px)
+{
+    // Top Greeting
+    #hello // It's me 
+    {
+   
+        font-size: 4em;
+        width: 4em;
+        overflow: none;
+
+    }
+
+    // article that holds Who I am and Contact paragraphs
+    #home
+    {
+        flex-direction: column;
+        margin-top: 0;
+        width: 80%;
+    }
+
+    //Who I am and Contact
+    #whatIDo
+    {
+        width: 15em;
+    }
+
+    #contactMe
+    {
+        width: 15em;
+    }
+}
+

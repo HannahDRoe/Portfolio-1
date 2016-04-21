@@ -1,4 +1,4 @@
-//Controler for Left Sliding Nav
+//Controler for moving Left Sliding Nav
 
 var app = angular.module("NavApp", []);
 

@@ -1,21 +1,21 @@
-/* Hamburger menu and Skip Links for Accessability*/
+// Hamburger menu and Skip Links for Accessability
 
-/*Sass variables, also used in _topNav.scss*/
+//Sass variables, also used in _topNav.scss
 $headerHeight: 4em;
-$headerBackground: #5E8FA1;
+$headerBackground: #3C768C;
 
-/*Skip to Links*/
+//Skip to Links
 .skipLinks
 {
     display: none;
 }
-/*Menu Hamburger block*/
+//Menu Hamburger block
 .navigation
 {
     margin: 0px 3px;
 }
 
-/*Menu Hamburger Bars*/
+//Menu Hamburger Bars
 .icon
 {
     display: block;
@@ -27,7 +27,7 @@ $headerBackground: #5E8FA1;
     border-bottom: 2px solid #fff;
     border-radius: 1px;
 }
-/*Screen Reader Only*/
+//Screen Reader Only
 .sr-only
 {
     position: absolute;
@@ -39,10 +39,10 @@ $headerBackground: #5E8FA1;
     border: 0;
 }
 
-/*Media Queries*/
-@media screen and (max-width: 775px)
+//Media Queries
+@media screen and (max-width: 768px)
 {
-    /*Skip to Links from*/
+    //Skip to Links from
     .skipLinks
     {
         display: block;
@@ -55,6 +55,7 @@ $headerBackground: #5E8FA1;
 
         color: #000;
     }
+    //Hamburger button
     button{
 
         height: $headerHeight - 0.2em;

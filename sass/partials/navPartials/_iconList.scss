@@ -1,8 +1,9 @@
 
+
+//Variables
 $headerHeight: 4em;
-
-
-
+    
+    // Mixin for icons
 @mixin imageMixin
 {
     position: relative;
@@ -14,17 +15,23 @@ $headerHeight: 4em;
     margin: .4em .3em 1em .3em;
     float: clearfix;
 
-}
+    list-style: none; 
 
+}
+// list that holds the icons
 #iconList
 {
     position: relative;
     display: inline;
+
+    list-style: none; 
+    
     
     height: 100%;
 
 }
 
+// LinkedIn icon
 #linkedIn
 {
     background: url('../images/linkedIn.svg') center;
@@ -37,6 +44,7 @@ $headerHeight: 4em;
     }
 }
 
+// Bit Bucket icon
 #bitBucket
 {
     background: url('../images/bitbucket-512px.svg') center;
@@ -52,6 +60,8 @@ $headerHeight: 4em;
 
     }
 }
+
+// Email icon
 #emailMe{
     background: url('../images/mail.svg') center;
 
@@ -67,32 +77,40 @@ $headerHeight: 4em;
     }
 }
 
-@media screen and (max-width: 775px)
+//Icons are moved in the navbar that slides from the left
+@media screen and (max-width: 768px)
 {
-	#iconList{
-		display: flex;
-        flex-direction: row;
-        padding: 0;
-        
+    //list that holds the icons
+	#iconList
+    {
 
-        li
-        {
-            height: 2em;
-
-        }
+        position: relative;
+		display: inline-block;
+        padding: 1em 0;
        
         
+        // List items (the icons)
+        li
+        {
+            padding: 1em;
+          
+
+        }  
 
 	}
+
+    // LinkedIn icon
     #linkedIn{
     
         &:hover
-    {
+        {
         background-color: $linkBackground;
 
-    }
+        }
 
     }
+
+    // Bit Bucket Icon
     #bitBucket{
         
         background-color: none;
@@ -101,9 +119,10 @@ $headerHeight: 4em;
         {
         background-color: $linkBackground;
         }
-            
         
     }
+
+    // Email icon
     #emailMe{
 
         background-color: none;

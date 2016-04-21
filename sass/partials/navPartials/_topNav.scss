@@ -1,22 +1,17 @@
-/*Header Nav with Links and Brand. With Media Queries*/
+// Header Nav with Links and Brand. With Media Queries 
 
 $headerHeight: 4em;
 
-/*Individual Sides Padding*/
-$topPadding: 1em;
-$RightPadding: 1.25em;
-$BottomPadding: 1.3em;
-$LeftPadding: 1.25em;
 
-/*Padding for all sides*/
-$navLinkPadding: $topPadding $RightPadding $BottomPadding $LeftPadding;
+// Padding for all sides 
+$navLinkPadding: 1em 1em 1.3em 1em;
 
-/*colors for Navlinks and Header Backgrounds*/
+// colors for Navlinks and Header Backgrounds !!! If these are changed also change colors in _hamburger.scss (background of button) and _portfolioContent.scss (background of boxes)
 $linkBackground: #94BAC9;
-$headerBackground: #5E8FA1;
+$headerBackground: #3C768C;
 $linkColor: #fff;
 
-/*Active Link properties */
+// Active Link properties
 @mixin activeLink
 {
     color: $linkColor;
@@ -25,13 +20,16 @@ $linkColor: #fff;
  }
 
 
-/*Header*/
+// Header 
 header
-{
+    {
+    position: static;
     height: $headerHeight;
-    width: 100%;
+    width: 100% ;
     margin: 0;
     padding: 0;
+
+    display: flex;
 
     background-color: $headerBackground;
 
@@ -42,20 +40,20 @@ header
 
 }
 
-/*Brand In top left corner*/
+// Brand In top left corner 
 .brand
 {
     font-family: $mainFont;
-    font-size: 1.75em;
+    font-size: 1.7em;
 
-    float: left;
+   
 
-    margin: .6em 2em .7em 1em;
+    margin: .5em 1em .5em 1em;
 
     color: $linkColor;
 }
 
-/*Top Nav*/
+// Top Nav 
 nav
 {
     font-size: 1.175em;
@@ -68,15 +66,19 @@ nav
 }
 
 
-/*Top Nav Links*/
+// Top Nav Links 
 .navLinks,
 .leftPushNav
 {
     display: inline;
+    text-decoration: none;
+    
+}
 
-    a
+//Navigation Link A's
+.navLinkA
     {
-        margin-right: -.6em;
+        margin-left: -.3em;
         padding: $navLinkPadding;
 
         &:hover
@@ -84,24 +86,22 @@ nav
             @include activeLink;
         }
     }
-}
+
+// Top Nav link when clicked
 .active
 {
-    li
-    {
-        padding: $navLinkPadding;
-    }
-    a
-    {
-        @include activeLink;
-    }
+    @include activeLink;
+    padding: $navLinkPadding;
+
+    
+    
 }
 
-
-
-/*Media Queries*/
-@media screen and (max-width: 775px)
+// Media Queries 
+@media screen and (max-width: 768px)
 {
+
+    // When slide navigation is visible 
     .show.left
     {
         -webkit-transform: translate3d(250px, 0, 0);
@@ -113,17 +113,36 @@ nav
         background: $linkBackground;
     }
 
+    // Top Nav 
     nav
     {
         font-size: 1em;
         font-weight: bold;
-        li
-        {
-            display: block;
-
-            padding: $navLinkPadding;
-        }
+     
     }
+
+     .navLinkA
+       {
+            display: block;
+            padding: 1em;
+            margin-left: .75em;
+
+        }
+
+    // Brand In top left corner 
+    .brand
+    {
+        font-family: $mainFont;
+        font-size: 1.7em;
+
+       
+
+        margin: .5em 1em .5em 1em;
+
+        color: $linkColor;
+    }
+
+    // Top Nav Links for  
     .leftPushNav
     {
         position: fixed;
@@ -140,6 +159,7 @@ nav
 
         background: $linkBackground;
         box-shadow: inset -10px 0 30px -15px darken($linkBackground, 15%);
+        
         a
         {
             color: lighten($mainFontColor, 15%);
