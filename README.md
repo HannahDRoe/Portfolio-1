@@ -1,5 +1,4 @@
-# README #
+# Portfolio #
+***
 
-## Portfolio ##
-
-This is my portfolio it was built using Sass and Angular. 
+This is my portfolio it was built using Sass and Angular.
