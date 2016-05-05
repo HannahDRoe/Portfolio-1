@@ -58,9 +58,9 @@ $headerBackground: #3C768C;
     //Hamburger button
     button{
 
-        height: $headerHeight - 0.2em;
-        margin: 0px;
-        padding:0px;
+        height: 4.5em;
+        cursor: normal;
+        padding:0;
         background-color: $headerBackground;
         border: none;
     

@@ -85,100 +85,142 @@ a {
 
   /* line 59, ../sass/partials/navPartials/_hamburger.scss */
   button {
-    height: 3.8em;
-    margin: 0px;
-    padding: 0px;
+    height: 4.5em;
+    cursor: normal;
+    padding: 0;
     background-color: #3c768c;
     border: none;
   }
 }
-/* line 18, ../sass/partials/navPartials/_topNav.scss */
+/* line 13, ../sass/partials/navPartials/_topNav.scss */
 header {
-  position: static;
+  position: relative;
   height: 4em;
   width: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
   background-color: #3c768c;
-  webkit-box-shadow: 0 5px 5px -5px #777777;
-  moz-box-shadow: 0 5px 5px -5px #777777;
-  box-shadow: 0 5px 5px -5px #777777;
+  display: flex;
+  flex-direction: row !important;
+  webkit-box-shadow: 0 5px 5px -5px #63696f;
+  moz-box-shadow: 0 5px 5px -5px #63696f;
+  box-shadow: 0 5px 5px -5px #63696f;
 }
 
-/* line 33, ../sass/partials/navPartials/_topNav.scss */
+/* line 29, ../sass/partials/navPartials/_topNav.scss */
 .brand {
+  position: relative;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
-  margin: .5em 1em;
+  height: 1.5em;
+  margin: .65em 1em;
   width: 33%;
-  justify-content: flex-start;
 }
 
-/* line 42, ../sass/partials/navPartials/_topNav.scss */
+/* line 38, ../sass/partials/navPartials/_topNav.scss */
 #nav {
-  margin-top: .75em;
   width: 100%;
+}
+
+/* line 41, ../sass/partials/navPartials/_topNav.scss */
+#navSpan {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
-/* line 52, ../sass/partials/navPartials/_topNav.scss */
+/* line 48, ../sass/partials/navPartials/_topNav.scss */
 #navLinks {
-  justify-content: flex-end;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  height: 4em;
+  width: 50%;
+}
+/* line 58, ../sass/partials/navPartials/_topNav.scss */
+#navLinks li {
+  position: relative;
+  display: flex;
+  width: 8em;
 }
 
-/* line 59, ../sass/partials/navPartials/_topNav.scss */
+/* line 65, ../sass/partials/navPartials/_topNav.scss */
 .navLinkA {
-  padding: 1em 1em 1.3em 1em;
+  padding-top: .75em;
+  text-align: center;
+  height: 3.25em;
+  width: 100%;
   color: #FCFCFC;
 }
-/* line 64, ../sass/partials/navPartials/_topNav.scss */
+/* line 72, ../sass/partials/navPartials/_topNav.scss */
 .navLinkA:hover {
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
-/* line 69, ../sass/partials/navPartials/_topNav.scss */
+/* line 77, ../sass/partials/navPartials/_topNav.scss */
 .active {
   background-color: #94bac9;
   transition: background-color 0.5s ease;
-  padding: 1em 1em 1.3em 1em;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 76, ../sass/partials/navPartials/_topNav.scss */
-  .show.left {
-    -webkit-transform: translate3d(250px, 0, 0);
-  }
-
-  /* line 79, ../sass/partials/navPartials/_topNav.scss */
-  .left {
-    left: -250px;
-    background: #94bac9;
-  }
-
-  /* line 84, ../sass/partials/navPartials/_topNav.scss */
-  nav {
-    font-size: 1em;
-    font-weight: bold;
-  }
-
-  /* line 88, ../sass/partials/navPartials/_topNav.scss */
-  .navLinkA {
-    display: block;
-    padding: 1em;
-    margin-left: .75em;
-  }
-
-  /* line 94, ../sass/partials/navPartials/_topNav.scss */
+  /* line 83, ../sass/partials/navPartials/_topNav.scss */
   .brand {
     font-family: "Open Sans", sans-serif;
     font-size: 1.7em;
     margin: .5em 1em .5em 1em;
+    width: 30em;
   }
 
-  /* line 101, ../sass/partials/navPartials/_topNav.scss */
+  /* line 90, ../sass/partials/navPartials/_topNav.scss */
+  .show.left {
+    -webkit-transform: translate3d(250px, 0, 0);
+  }
+
+  /* line 93, ../sass/partials/navPartials/_topNav.scss */
+  .left {
+    left: -250px;
+    background: #3c768c;
+  }
+
+  /* line 98, ../sass/partials/navPartials/_topNav.scss */
+  #navSpan {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* line 105, ../sass/partials/navPartials/_topNav.scss */
+  #navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+    height: 15em;
+    width: 100%;
+  }
+  /* line 114, ../sass/partials/navPartials/_topNav.scss */
+  #navLinks li {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 4em;
+  }
+
+  /* line 121, ../sass/partials/navPartials/_topNav.scss */
+  .navLinkA {
+    padding-top: .75em;
+    text-align: center;
+    height: 3em;
+    width: 100%;
+  }
+
+  /* line 128, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav {
     position: fixed;
     z-index: 3;
@@ -187,111 +229,83 @@ header {
     width: 250px;
     height: 100%;
     min-height: 528px;
-    padding: 10px 0 0 0;
     transition: all 500ms ease-in-out;
-    background: #94bac9;
-    box-shadow: inset -10px 0 30px -15px #6199af;
+    background: #3c768c;
+    box-shadow: inset -10px 0 30px -15px #254956;
   }
-  /* line 114, ../sass/partials/navPartials/_topNav.scss */
+  /* line 140, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav a {
     color: white;
   }
 }
-/* line 23, ../sass/partials/navPartials/_iconList.scss */
+/* line 16, ../sass/partials/navPartials/_iconList.scss */
 #iconList {
-  position: relative;
-  display: inline;
-  list-style: none;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 13em;
+  justify-content: flex-end;
+  height: 4em;
+  list-style-type: none;
+}
+
+/* line 26, ../sass/partials/navPartials/_iconList.scss */
+.iconListA {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+/* line 32, ../sass/partials/navPartials/_iconList.scss */
+#linkedIn {
+  background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/linkedin-logo.svg") center no-repeat;
+  background-size: 1.75em  1.75em;
+  height: 4em;
+  width: 4em;
+}
+/* line 10, ../sass/partials/navPartials/_iconList.scss */
+#linkedIn:hover {
+  background-color: #94bac9;
+  transition: background-color 0.5s ease;
 }
 
 /* line 37, ../sass/partials/navPartials/_iconList.scss */
-#linkedIn {
-  background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/linkedIn.svg") center;
-  position: relative;
-  height: 4em;
-  padding: 1.5em 1.2em 1.3em 1.2em;
-  background-repeat: no-repeat;
-  background-size: 1.3em 1.3em;
-  margin: .4em .3em 1em .3em;
-  float: clearfix;
-  list-style: none;
-}
-/* line 42, ../sass/partials/navPartials/_iconList.scss */
-#linkedIn:hover {
-  background-color: #0077b5;
-}
-
-/* line 50, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket {
-  background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/bitbucket-512px.svg") center;
-  position: relative;
+  background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/bit-bucket-logo.svg") center no-repeat;
+  background-size: 1.75em  1.75em;
   height: 4em;
-  padding: 1.5em 1.2em 1.3em 1.2em;
-  background-repeat: no-repeat;
-  background-size: 1.3em 1.3em;
-  margin: .4em .3em 1em .3em;
-  float: clearfix;
-  list-style: none;
-  background-size: 1.4em 1.4em;
+  width: 4em;
 }
-/* line 59, ../sass/partials/navPartials/_iconList.scss */
+/* line 10, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket:hover {
-  background-color: #205081;
+  background-color: #94bac9;
+  transition: background-color 0.5s ease;
 }
 
-/* line 66, ../sass/partials/navPartials/_iconList.scss */
+/* line 42, ../sass/partials/navPartials/_iconList.scss */
 #emailMe {
-  background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/mail.svg") center;
-  position: relative;
+  background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/email.svg") center no-repeat;
+  background-size: 1.75em  1.75em;
   height: 4em;
-  padding: 1.5em 1.2em 1.3em 1.2em;
-  background-repeat: no-repeat;
-  background-size: 1.3em 1.3em;
-  margin: .4em .3em 1em .3em;
-  float: clearfix;
-  list-style: none;
-  background-size: 1.5em 1.5em;
+  width: 4em;
 }
-/* line 75, ../sass/partials/navPartials/_iconList.scss */
+/* line 10, ../sass/partials/navPartials/_iconList.scss */
 #emailMe:hover {
-  background-color: #AA3939;
+  background-color: #94bac9;
+  transition: background-color 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 86, ../sass/partials/navPartials/_iconList.scss */
+  /* line 53, ../sass/partials/navPartials/_iconList.scss */
   #iconList {
-    position: relative;
-    display: inline-block;
-    padding: 1em 0;
-  }
-  /* line 95, ../sass/partials/navPartials/_iconList.scss */
-  #iconList li {
-    padding: 1em;
-  }
-
-  /* line 107, ../sass/partials/navPartials/_iconList.scss */
-  #linkedIn:hover {
-    background-color: #94bac9;
-  }
-
-  /* line 115, ../sass/partials/navPartials/_iconList.scss */
-  #bitBucket {
-    background-color: none;
-  }
-  /* line 120, ../sass/partials/navPartials/_iconList.scss */
-  #bitBucket:hover {
-    background-color: #94bac9;
-  }
-
-  /* line 127, ../sass/partials/navPartials/_iconList.scss */
-  #emailMe {
-    background-color: none;
-  }
-  /* line 132, ../sass/partials/navPartials/_iconList.scss */
-  #emailMe:hover {
-    background-color: #94bac9;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    height: 4em;
   }
 }
 /* line 2, ../sass/partials/_index.scss */
@@ -348,14 +362,15 @@ header {
     flex-direction: column;
     margin-top: 0;
     width: 80%;
+    margin-left: 5em;
   }
 
-  /* line 53, ../sass/partials/_index.scss */
+  /* line 54, ../sass/partials/_index.scss */
   #whatIDo {
     width: 15em;
   }
 
-  /* line 56, ../sass/partials/_index.scss */
+  /* line 57, ../sass/partials/_index.scss */
   #contactMe {
     width: 15em;
   }
