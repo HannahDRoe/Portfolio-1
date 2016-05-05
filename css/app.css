@@ -1,37 +1,39 @@
-/* line 8, ../sass/app.scss */
+/* line 9, ../sass/app.scss */
 body {
   position: relative;
-  font-family: Sans-serif;
+  font-family: "Open Sans", sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-size: 0.9em;
+  font-size: 1em;
   color: #38424b;
+  line-height: 2em;
 }
 
-/* line 24, ../sass/app.scss */
-h1, h2 {
+/* line 27, ../sass/app.scss */
+h1 {
+  font-family: "Quicksand", sans-serif;
   font-weight: bolder;
 }
 
-/* line 29, ../sass/app.scss */
+/* line 33, ../sass/app.scss */
 ul li {
   display: inline;
   padding: none;
 }
 
-/* line 38, ../sass/app.scss */
+/* line 42, ../sass/app.scss */
 a {
   text-decoration: none !important;
   color: #38424b;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 47, ../sass/app.scss */
+  /* line 51, ../sass/app.scss */
   article {
     flex-direction: column;
   }
-  /* line 49, ../sass/app.scss */
+  /* line 53, ../sass/app.scss */
   article p {
     width: auto;
   }
@@ -100,7 +102,7 @@ header {
 
 /* line 45, ../sass/partials/navPartials/_topNav.scss */
 .brand {
-  font-family: Sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.7em;
   margin: .5em 1em .5em 1em;
   color: white;
@@ -124,15 +126,16 @@ nav {
 .navLinkA {
   margin-left: -0.3em;
   padding: 1em 1em 1.3em 1em;
+  color: #FCFCFC;
 }
-/* line 85, ../sass/partials/navPartials/_topNav.scss */
+/* line 86, ../sass/partials/navPartials/_topNav.scss */
 .navLinkA:hover {
   color: white;
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
-/* line 92, ../sass/partials/navPartials/_topNav.scss */
+/* line 93, ../sass/partials/navPartials/_topNav.scss */
 .active {
   color: white;
   background-color: #94bac9;
@@ -141,39 +144,39 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 106, ../sass/partials/navPartials/_topNav.scss */
+  /* line 107, ../sass/partials/navPartials/_topNav.scss */
   .show.left {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 
-  /* line 110, ../sass/partials/navPartials/_topNav.scss */
+  /* line 111, ../sass/partials/navPartials/_topNav.scss */
   .left {
     left: -250px;
     background: #94bac9;
   }
 
-  /* line 118, ../sass/partials/navPartials/_topNav.scss */
+  /* line 119, ../sass/partials/navPartials/_topNav.scss */
   nav {
     font-size: 1em;
     font-weight: bold;
   }
 
-  /* line 125, ../sass/partials/navPartials/_topNav.scss */
+  /* line 126, ../sass/partials/navPartials/_topNav.scss */
   .navLinkA {
     display: block;
     padding: 1em;
     margin-left: .75em;
   }
 
-  /* line 134, ../sass/partials/navPartials/_topNav.scss */
+  /* line 135, ../sass/partials/navPartials/_topNav.scss */
   .brand {
-    font-family: Sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.7em;
     margin: .5em 1em .5em 1em;
     color: white;
   }
 
-  /* line 147, ../sass/partials/navPartials/_topNav.scss */
+  /* line 148, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav {
     position: fixed;
     z-index: 3;
@@ -187,7 +190,7 @@ nav {
     background: #94bac9;
     box-shadow: inset -10px 0 30px -15px #6199af;
   }
-  /* line 164, ../sass/partials/navPartials/_topNav.scss */
+  /* line 165, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav a {
     color: #596977;
   }
@@ -197,10 +200,11 @@ nav {
   position: relative;
   display: inline;
   list-style: none;
+  width: 100%;
   height: 100%;
 }
 
-/* line 36, ../sass/partials/navPartials/_iconList.scss */
+/* line 37, ../sass/partials/navPartials/_iconList.scss */
 #linkedIn {
   background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/linkedIn.svg") center;
   position: relative;
@@ -212,12 +216,12 @@ nav {
   float: clearfix;
   list-style: none;
 }
-/* line 41, ../sass/partials/navPartials/_iconList.scss */
+/* line 42, ../sass/partials/navPartials/_iconList.scss */
 #linkedIn:hover {
   background-color: #0077b5;
 }
 
-/* line 49, ../sass/partials/navPartials/_iconList.scss */
+/* line 50, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket {
   background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/bitbucket-512px.svg") center;
   position: relative;
@@ -230,12 +234,12 @@ nav {
   list-style: none;
   background-size: 1.4em 1.4em;
 }
-/* line 58, ../sass/partials/navPartials/_iconList.scss */
+/* line 59, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket:hover {
   background-color: #205081;
 }
 
-/* line 65, ../sass/partials/navPartials/_iconList.scss */
+/* line 66, ../sass/partials/navPartials/_iconList.scss */
 #emailMe {
   background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/mail.svg") center;
   position: relative;
@@ -248,42 +252,42 @@ nav {
   list-style: none;
   background-size: 1.5em 1.5em;
 }
-/* line 74, ../sass/partials/navPartials/_iconList.scss */
+/* line 75, ../sass/partials/navPartials/_iconList.scss */
 #emailMe:hover {
   background-color: #AA3939;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 85, ../sass/partials/navPartials/_iconList.scss */
+  /* line 86, ../sass/partials/navPartials/_iconList.scss */
   #iconList {
     position: relative;
     display: inline-block;
     padding: 1em 0;
   }
-  /* line 94, ../sass/partials/navPartials/_iconList.scss */
+  /* line 95, ../sass/partials/navPartials/_iconList.scss */
   #iconList li {
     padding: 1em;
   }
 
-  /* line 106, ../sass/partials/navPartials/_iconList.scss */
+  /* line 107, ../sass/partials/navPartials/_iconList.scss */
   #linkedIn:hover {
     background-color: #94bac9;
   }
 
-  /* line 114, ../sass/partials/navPartials/_iconList.scss */
+  /* line 115, ../sass/partials/navPartials/_iconList.scss */
   #bitBucket {
     background-color: none;
   }
-  /* line 119, ../sass/partials/navPartials/_iconList.scss */
+  /* line 120, ../sass/partials/navPartials/_iconList.scss */
   #bitBucket:hover {
     background-color: #94bac9;
   }
 
-  /* line 126, ../sass/partials/navPartials/_iconList.scss */
+  /* line 127, ../sass/partials/navPartials/_iconList.scss */
   #emailMe {
     background-color: none;
   }
-  /* line 131, ../sass/partials/navPartials/_iconList.scss */
+  /* line 132, ../sass/partials/navPartials/_iconList.scss */
   #emailMe:hover {
     background-color: #94bac9;
   }
@@ -346,44 +350,48 @@ nav {
     width: 15em;
   }
 }
-/* line 8, ../sass/partials/_about.scss */
+/* line 6, ../sass/partials/_about.scss */
 #aboutTitle {
   position: relative;
-  margin: 1.7em 0em .5em 2em;
-  font-size: 2.5em;
+  margin: 1em 0em 1em 2em;
+  font-size: 4em;
 }
 
-/* line 16, ../sass/partials/_about.scss */
+/* line 12, ../sass/partials/_about.scss */
 #aboutArticle {
   position: relative;
-  left: 26%;
+  left: 10%;
   margin-top: 2em;
   height: 100%;
   width: 45em;
-  line-height: 1.4em;
-  font-size: 1.2em;
 }
 
-/* line 32, ../sass/partials/_about.scss */
+/* line 22, ../sass/partials/_about.scss */
 #aboutP #skillSetSect {
   left: 25%;
   width: 100%;
 }
 
-/* line 39, ../sass/partials/_about.scss */
+/* line 27, ../sass/partials/_about.scss */
 .skillSetLi {
   display: list-item;
-  list-style-type: circle;
+  list-style-type: none;
 }
 
-/* line 45, ../sass/partials/_about.scss */
+/* line 31, ../sass/partials/_about.scss */
+.skillSetLi:before {
+  content: "• ";
+  color: #3c768c;
+}
+
+/* line 36, ../sass/partials/_about.scss */
 #selfPortraitDiv {
   display: block;
   margin-top: 5em;
   text-align: center;
 }
 
-/* line 51, ../sass/partials/_about.scss */
+/* line 42, ../sass/partials/_about.scss */
 #selfPortrait {
   position: relative;
   text-align: center;
@@ -393,20 +401,20 @@ nav {
   border-radius: .25em;
 }
 
-/* line 64, ../sass/partials/_about.scss */
+/* line 51, ../sass/partials/_about.scss */
 #resumeLink {
   display: block;
   padding-bottom: 1em;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 73, ../sass/partials/_about.scss */
+  /* line 56, ../sass/partials/_about.scss */
   #aboutTitle {
     padding-right: 0;
     margin: .25em;
   }
 
-  /* line 80, ../sass/partials/_about.scss */
+  /* line 61, ../sass/partials/_about.scss */
   #aboutArticle {
     position: relative;
     left: 5%;
@@ -433,11 +441,11 @@ main {
   margin: 5em auto;
   padding: 0;
   width: 100%;
+  height: 100%;
 }
 
-/* line 34, ../sass/partials/_portfolio.scss */
+/* line 35, ../sass/partials/_portfolio.scss */
 .portfolioLi {
-  height: 275px;
   width: 33%;
   margin: 0 .25em;
   background-color: #C0C4C6;
