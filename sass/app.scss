@@ -1,59 +1,47 @@
 //Sass Variables 
-$mainFont:'Open Sans', sans-serif;
-$mainFontColor: #38424b;
+$mainFont: 'Open Sans', sans-serif;
+$mainFontColor: #F4F5F9;
 $mainFontSize: 1em;
-$bigFont:'Quicksand', sans-serif;
+$bigFont: 'Quicksand', sans-serif;
 
+html {
+    height: 100%;
+}
 //Styles for the whole page 
-body
-{
-
+body {
     position: relative;
     font-family: $mainFont;
     height: 100%;
-
     margin: 0;
     padding: 0;
-
     font-size: $mainFontSize;
-
     color: $mainFontColor;
-
     line-height: 2em;
-  
+    background-color: #1d1d1d;
 }
 //styles for h's 
-h1
-{
+h1 {
     font-family: $bigFont;
     font-weight: bolder;
 }
 //Sytles for Lists
-ul li
-{
+ul li {
     display: inline;
-
     padding: none;
-
-   
 }
 //Styles for links
-a
-{
+a {
     text-decoration: none !important;
     color: $mainFontColor;
 }
-
 //Media Query 
-@media screen and (max-width: 775px)
-{
-    article
-    {
+@media screen and (max-width:775px) {
+    article {
         flex-direction: column;
-        p{
+
+        p {
             width: auto;
         }
-    
     }
 }
 // Partials! 
