@@ -447,62 +447,59 @@ header {
     width: 16em;
   }
 }
-/* line 5, ../sass/partials/_portfolio.scss */
+/* line 7, ../sass/partials/_portfolio.scss */
 main {
   width: 100%;
 }
 
-/* line 11, ../sass/partials/_portfolio.scss */
+/* line 13, ../sass/partials/_portfolio.scss */
 #portfolioTitle {
   margin: 1.7em 0em .5em 2.25em;
   font-size: 2.5em;
 }
 
-/* line 19, ../sass/partials/_portfolio.scss */
+/* line 21, ../sass/partials/_portfolio.scss */
 #portfolioUl {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin: 5em auto;
   padding: 0;
   width: 100%;
   height: 100%;
 }
 
-/* line 35, ../sass/partials/_portfolio.scss */
+/* line 38, ../sass/partials/_portfolio.scss */
 .portfolioLi {
-  width: 33%;
-  margin: 0 .25em;
-  background-color: #C0C4C6;
-}
-
-/* line 44, ../sass/partials/_portfolio.scss */
-.portFigure {
-  margin: 15px auto 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  background-color: #434343;
+  margin-top: 1.5em;
+  border-radius: .25em;
+  padding: 2em;
 }
 
-/* line 51, ../sass/partials/_portfolio.scss */
+/* line 55, ../sass/partials/_portfolio.scss */
 #rightImg, #centerImg, #leftImg {
   border-radius: .15em;
   height: 175px;
   width: 275px;
 }
 
-/* line 61, ../sass/partials/_portfolio.scss */
-.listDiv {
-  text-align: center;
-}
-
 @media screen and (max-width: 768px) {
-  /* line 70, ../sass/partials/_portfolio.scss */
+  /* line 69, ../sass/partials/_portfolio.scss */
   #portfolioUl {
     flex-direction: column;
     margin-left: 10%;
     width: 100%;
   }
 
-  /* line 79, ../sass/partials/_portfolio.scss */
+  /* line 78, ../sass/partials/_portfolio.scss */
   .portfolioLi {
     width: 80%;
     margin-top: 1.5em;
