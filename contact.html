@@ -18,7 +18,7 @@
     		<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 		<![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Quicksand' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Quicksand:300' rel='stylesheet' type='text/css'>
 	</head>
 	<body  ng-app="NavApp" ng-controller="navCtrl" class="ng-scope"ng-app="contactApp" ng-controller="formCtrl">
 		<header id="top" >
@@ -71,14 +71,15 @@
 
 		<!-- Main Content -->
 		<main>
-			<h1 id="contact">Contact Me</h1>
+			<h1 id="contactHeader">Contact Me</h1>
 			<div id="thankYouDiv"></div>
 			<!--Contact Form -->
-			<form id="contactForm"  action="contact.php"
-      			method="POST" role="form" name="contactForm" ng-submit="submitForm(contactForm.$valid)" novalidate>
+			<div id="fieldContainer">
+				<p>I am currently working on the PHP for this form. Please email me at hannahdroe@gmail.com <br> Thanks!</p>
+			<form id="contactForm"  action="email_form.php" method="post" role="form" name="contactForm" ng-submit="submitForm(contactForm.$valid)" novalidate>
 				<fieldset>
 					<!-- Name Input Field -->
-					<div id="nameDiv">
+					<div>
 						<label for="name">Name</label>
 						<input id="name" type="text" name="name" placeholder="Your Name" ng-model="name" required />
 
@@ -89,7 +90,7 @@
 					</div>
 
 					<!-- Email Input Field --> 
-					<div id="emailDiv">
+					<div>
 						<label for="email">Email Address</label>
 						<input id="email" type="email" name="_replyto" placeholder="Your Email Address" ng-model="email" required />
 
@@ -100,7 +101,7 @@
 					</div>
 
 					<!-- Message Input Field -->
-					<div id="messageDiv">
+					<div>
 						<label for="message">Message</label>
 						<textarea id="message" name="message" placeholder="Message..." ng-model="message" required></textarea>
 
@@ -111,11 +112,12 @@
 						<!-- Anti-spam Because No one likes spam -->
 						<input id="antiSpam" type="text" name="_gotcha" />
 						<!-- Submit Button-->
-						<input type="submit" value="Send" id="submit" ng-disabled="contactForm.$invalid"/>
+						<button type="submit" value="Send" id="submit" ng-disabled="contactForm">Send</button>
 					</div>
+					
 				</fieldset>
 			</form>
-
+			</div>
 		</main>
 	<footer></footer>
 

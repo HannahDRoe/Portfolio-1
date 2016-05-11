@@ -19,7 +19,6 @@ body {
 /* line 23, ../sass/app.scss */
 h1 {
   font-family: "Quicksand", sans-serif;
-  font-weight: bolder;
 }
 
 /* line 28, ../sass/app.scss */
@@ -101,36 +100,37 @@ header {
   padding: 0;
   background-color: #3c768c;
   display: flex;
-  flex-direction: row !important;
+  flex-direction: row;
   webkit-box-shadow: 0 5px 5px -5px #63696f;
   moz-box-shadow: 0 5px 5px -5px #63696f;
   box-shadow: 0 5px 5px -5px #63696f;
 }
 
-/* line 29, ../sass/partials/navPartials/_topNav.scss */
+/* line 30, ../sass/partials/navPartials/_topNav.scss */
 .brand {
   position: relative;
+  white-space: nowrap;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
   height: 1.5em;
-  margin: .65em 1em;
-  width: 33%;
+  margin: .65em 0 .65em 1em;
+  width: 8em;
 }
 
-/* line 38, ../sass/partials/navPartials/_topNav.scss */
+/* line 40, ../sass/partials/navPartials/_topNav.scss */
 #nav {
   width: 100%;
 }
 
-/* line 41, ../sass/partials/navPartials/_topNav.scss */
+/* line 43, ../sass/partials/navPartials/_topNav.scss */
 #navSpan {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: nowrap;
 }
 
-/* line 48, ../sass/partials/navPartials/_topNav.scss */
+/* line 50, ../sass/partials/navPartials/_topNav.scss */
 #navLinks {
   position: relative;
   display: flex;
@@ -138,16 +138,15 @@ header {
   margin: 0;
   padding: 0;
   height: 4em;
-  width: 50%;
 }
-/* line 58, ../sass/partials/navPartials/_topNav.scss */
+/* line 59, ../sass/partials/navPartials/_topNav.scss */
 #navLinks li {
   position: relative;
   display: flex;
-  width: 8em;
+  width: 6em;
 }
 
-/* line 65, ../sass/partials/navPartials/_topNav.scss */
+/* line 66, ../sass/partials/navPartials/_topNav.scss */
 .navLinkA {
   padding-top: .75em;
   text-align: center;
@@ -155,46 +154,47 @@ header {
   width: 100%;
   color: #FCFCFC;
 }
-/* line 72, ../sass/partials/navPartials/_topNav.scss */
+/* line 73, ../sass/partials/navPartials/_topNav.scss */
 .navLinkA:hover {
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
-/* line 77, ../sass/partials/navPartials/_topNav.scss */
+/* line 78, ../sass/partials/navPartials/_topNav.scss */
 .active {
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 83, ../sass/partials/navPartials/_topNav.scss */
+  /* line 84, ../sass/partials/navPartials/_topNav.scss */
   .brand {
+    position: absolute;
     font-family: "Open Sans", sans-serif;
     font-size: 1.7em;
     margin: .5em 1em .5em 1em;
-    width: 30em;
+    width: 7em;
   }
 
-  /* line 90, ../sass/partials/navPartials/_topNav.scss */
+  /* line 92, ../sass/partials/navPartials/_topNav.scss */
   .show.left {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 
-  /* line 93, ../sass/partials/navPartials/_topNav.scss */
+  /* line 95, ../sass/partials/navPartials/_topNav.scss */
   .left {
     left: -250px;
     background: #3c768c;
   }
 
-  /* line 98, ../sass/partials/navPartials/_topNav.scss */
+  /* line 100, ../sass/partials/navPartials/_topNav.scss */
   #navSpan {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  /* line 105, ../sass/partials/navPartials/_topNav.scss */
+  /* line 107, ../sass/partials/navPartials/_topNav.scss */
   #navLinks {
     display: flex;
     flex-direction: column;
@@ -204,7 +204,7 @@ header {
     height: 15em;
     width: 100%;
   }
-  /* line 114, ../sass/partials/navPartials/_topNav.scss */
+  /* line 116, ../sass/partials/navPartials/_topNav.scss */
   #navLinks li {
     position: relative;
     display: flex;
@@ -212,7 +212,7 @@ header {
     height: 4em;
   }
 
-  /* line 121, ../sass/partials/navPartials/_topNav.scss */
+  /* line 123, ../sass/partials/navPartials/_topNav.scss */
   .navLinkA {
     padding-top: .75em;
     text-align: center;
@@ -220,7 +220,7 @@ header {
     width: 100%;
   }
 
-  /* line 128, ../sass/partials/navPartials/_topNav.scss */
+  /* line 130, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav {
     position: fixed;
     z-index: 3;
@@ -233,7 +233,7 @@ header {
     background: #3c768c;
     box-shadow: inset -10px 0 30px -15px #254956;
   }
-  /* line 140, ../sass/partials/navPartials/_topNav.scss */
+  /* line 142, ../sass/partials/navPartials/_topNav.scss */
   .leftPushNav a {
     color: white;
   }
@@ -244,25 +244,26 @@ header {
   flex-direction: row;
   margin: 0;
   padding: 0;
-  width: 13em;
+  width: 12em;
   justify-content: flex-end;
   height: 4em;
   list-style-type: none;
+  position: relative;
 }
 
-/* line 26, ../sass/partials/navPartials/_iconList.scss */
+/* line 27, ../sass/partials/navPartials/_iconList.scss */
 .iconListA {
   display: flex;
   align-items: center;
   margin: 0;
 }
 
-/* line 32, ../sass/partials/navPartials/_iconList.scss */
+/* line 33, ../sass/partials/navPartials/_iconList.scss */
 #linkedIn {
   background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/linkedin-logo.svg") center no-repeat;
-  background-size: 1.75em  1.75em;
+  background-size: 1.5em  1.5em;
   height: 4em;
-  width: 4em;
+  width: 3em;
 }
 /* line 10, ../sass/partials/navPartials/_iconList.scss */
 #linkedIn:hover {
@@ -270,12 +271,12 @@ header {
   transition: background-color 0.5s ease;
 }
 
-/* line 37, ../sass/partials/navPartials/_iconList.scss */
+/* line 38, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket {
   background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/bit-bucket-logo.svg") center no-repeat;
-  background-size: 1.75em  1.75em;
+  background-size: 1.5em  1.5em;
   height: 4em;
-  width: 4em;
+  width: 3em;
 }
 /* line 10, ../sass/partials/navPartials/_iconList.scss */
 #bitBucket:hover {
@@ -283,12 +284,12 @@ header {
   transition: background-color 0.5s ease;
 }
 
-/* line 42, ../sass/partials/navPartials/_iconList.scss */
+/* line 43, ../sass/partials/navPartials/_iconList.scss */
 #emailMe {
   background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/email.svg") center no-repeat;
-  background-size: 1.75em  1.75em;
+  background-size: 1.5em  1.5em;
   height: 4em;
-  width: 4em;
+  width: 3em;
 }
 /* line 10, ../sass/partials/navPartials/_iconList.scss */
 #emailMe:hover {
@@ -297,7 +298,7 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 53, ../sass/partials/navPartials/_iconList.scss */
+  /* line 54, ../sass/partials/navPartials/_iconList.scss */
   #iconList {
     display: flex;
     flex-direction: row;
@@ -349,15 +350,20 @@ header {
   width: 30em;
 }
 
+/* line 38, ../sass/partials/_index.scss */
+#emailLink {
+  text-decoration: underline !important;
+}
+
 @media screen and (max-width: 768px) {
-  /* line 41, ../sass/partials/_index.scss */
+  /* line 44, ../sass/partials/_index.scss */
   #hello {
     font-size: 4em;
     width: 4em;
-    overflow: none;
+    margin-bottom: 1em;
   }
 
-  /* line 47, ../sass/partials/_index.scss */
+  /* line 50, ../sass/partials/_index.scss */
   #home {
     flex-direction: column;
     margin-top: 0;
@@ -365,12 +371,12 @@ header {
     margin-left: 5em;
   }
 
-  /* line 54, ../sass/partials/_index.scss */
+  /* line 57, ../sass/partials/_index.scss */
   #whatIDo {
     width: 15em;
   }
 
-  /* line 57, ../sass/partials/_index.scss */
+  /* line 60, ../sass/partials/_index.scss */
   #contactMe {
     width: 15em;
   }
@@ -436,7 +442,7 @@ header {
   /* line 53, ../sass/partials/_about.scss */
   #aboutTitle {
     padding-right: 0;
-    margin: .25em;
+    margin: .5em;
   }
 
   /* line 58, ../sass/partials/_about.scss */
@@ -447,18 +453,19 @@ header {
     width: 16em;
   }
 }
-/* line 7, ../sass/partials/_portfolio.scss */
+/* line 4, ../sass/partials/_portfolio.scss */
 main {
   width: 100%;
 }
 
-/* line 13, ../sass/partials/_portfolio.scss */
+/* line 8, ../sass/partials/_portfolio.scss */
 #portfolioTitle {
-  margin: 1.7em 0em .5em 2.25em;
-  font-size: 2.5em;
+  position: relative;
+  margin: 1em 0em 1em 2em;
+  font-size: 4em;
 }
 
-/* line 21, ../sass/partials/_portfolio.scss */
+/* line 14, ../sass/partials/_portfolio.scss */
 #portfolioUl {
   display: flex;
   flex-direction: column;
@@ -470,13 +477,12 @@ main {
   height: 100%;
 }
 
-/* line 38, ../sass/partials/_portfolio.scss */
+/* line 25, ../sass/partials/_portfolio.scss */
 .portfolioLi {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   width: 50%;
   background-color: #434343;
   margin-top: 1.5em;
@@ -484,116 +490,123 @@ main {
   padding: 2em;
 }
 
-/* line 55, ../sass/partials/_portfolio.scss */
+/* line 37, ../sass/partials/_portfolio.scss */
 #rightImg, #centerImg, #leftImg {
   border-radius: .15em;
-  height: 175px;
-  width: 275px;
+  height: auto;
+  width: 100%;
+  list-style: none;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 69, ../sass/partials/_portfolio.scss */
+  /* line 45, ../sass/partials/_portfolio.scss */
+  #portfolioTitle {
+    padding-right: 0;
+    margin: .5em;
+  }
+
+  /* line 50, ../sass/partials/_portfolio.scss */
   #portfolioUl {
     flex-direction: column;
-    margin-left: 10%;
     width: 100%;
   }
 
-  /* line 78, ../sass/partials/_portfolio.scss */
+  /* line 55, ../sass/partials/_portfolio.scss */
   .portfolioLi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
-    margin-top: 1.5em;
-    margin-right: 0;
-    padding-left: .25em;
-    border-radius: none;
   }
 }
-/* line 9, ../sass/partials/_contact.scss */
-#contact {
-  margin: 1.7em 0em .5em 2em;
-  font-size: 2.5em;
-}
-
-/* line 17, ../sass/partials/_contact.scss */
-form {
+/* line 7, ../sass/partials/_contact.scss */
+#contactHeader {
   position: relative;
-  left: 25%;
-  margin-top: 7em;
-  height: 100%;
-  width: 30em;
+  margin: 1em 0em 1em 2em;
+  font-size: 4em;
 }
 
-/* line 27, ../sass/partials/_contact.scss */
+/* line 14, ../sass/partials/_contact.scss */
 fieldset {
   border: 0;
   width: 100%;
 }
 
-/* line 33, ../sass/partials/_contact.scss */
-#nameDiv, #emailDiv, #messageDiv {
+/* line 19, ../sass/partials/_contact.scss */
+#fieldContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   width: 100%;
 }
 
-/* line 40, ../sass/partials/_contact.scss */
+/* line 29, ../sass/partials/_contact.scss */
 label {
   display: none;
 }
 
-/* line 47, ../sass/partials/_contact.scss */
+/* line 33, ../sass/partials/_contact.scss */
 input {
   margin-bottom: .75em;
-  width: 30em;
+  width: 30.25em;
   height: 3em;
-  border-radius: 3px;
-  border: 1px #3c768c solid;
+  border: 0.15em solid #44859e;
+  border-radius: 0.15em;
   box-shadow: 0;
 }
 
-/* line 60, ../sass/partials/_contact.scss */
+/* line 42, ../sass/partials/_contact.scss */
 textarea {
   height: 5em;
   width: 30em;
   height: 12em;
-  border-radius: 3px;
-  border: 1px #3c768c solid;
   margin-bottom: .75em;
+  border: 0.15em solid #44859e;
+  border-radius: 0.15em;
 }
 
-/* line 73, ../sass/partials/_contact.scss */
+/* line 52, ../sass/partials/_contact.scss */
 #antiSpam {
   display: none;
 }
 
-/* line 79, ../sass/partials/_contact.scss */
+/* line 56, ../sass/partials/_contact.scss */
 #submit {
+  height: 3em;
   margin-top: 2em;
   display: block;
-  width: 10em;
+  width: 8em;
   background-color: #3c768c;
   color: #eee;
   cursor: pointer;
+  border: none;
+  border-radius: 0.15em;
 }
 
-/* line 89, ../sass/partials/_contact.scss */
+/* line 68, ../sass/partials/_contact.scss */
 #submit:disabled {
   cursor: default;
   background-color: #91bfd0;
 }
 
-/* line 95, ../sass/partials/_contact.scss */
+/* line 73, ../sass/partials/_contact.scss */
 .messageContnr {
-  position: relative;
-  width: 60%;
-  color: #9F6000;
-  background-color: #FEEFB3;
-  border-radius: .5em;
-  margin: .25em .5em 1.25em .5em;
-  padding: .5em;
+  width: 65%;
+  height: 1.75em;
+  color: #fcfdfe;
+  background-color: #91bfd0;
+  border-radius: .15em;
+  margin-top: .25em;
+  padding: 0 0  .25em .5em;
+  font-size: .95em;
 }
 
-/* line 107, ../sass/partials/_contact.scss */
+/* line 84, ../sass/partials/_contact.scss */
 #thankYouMessage {
-  height: 10em;
+  height: 100%;
   width: 50%;
   margin: 2em auto;
   padding: 2em;
@@ -603,38 +616,38 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 137, ../sass/partials/_contact.scss */
-  #contact {
-    margin: 1em 0em 0em 2em;
-    font-size: 2.5em;
+  /* line 102, ../sass/partials/_contact.scss */
+  #contactHeader {
+    padding-right: 0;
+    margin: .5em;
+    font-size: 3em;
   }
 
-  /* line 143, ../sass/partials/_contact.scss */
+  /* line 108, ../sass/partials/_contact.scss */
   fieldset {
     border: 0;
-    width: 100%;
+    width: 23em;
     margin-right: 0;
   }
 
-  /* line 151, ../sass/partials/_contact.scss */
+  /* line 114, ../sass/partials/_contact.scss */
   form {
     position: absolute;
     height: 30em;
     width: 23em;
     margin: 2em 0 0 1em;
-    left: .5%;
   }
 
-  /* line 162, ../sass/partials/_contact.scss */
+  /* line 121, ../sass/partials/_contact.scss */
   input {
-    margin-bottom: .75em;
+    margin-bottom: .5em;
     width: 75%;
     height: 3em;
-    border-radius: 3px;
+    border-radius: 0.15em;
     padding: 0;
   }
 
-  /* line 174, ../sass/partials/_contact.scss */
+  /* line 129, ../sass/partials/_contact.scss */
   textarea {
     width: 75%;
   }

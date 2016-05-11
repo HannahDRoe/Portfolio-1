@@ -35,13 +35,16 @@
     margin-top: 1em;
     width: 30em;
 }
+#emailLink{
+    text-decoration: underline !important;
+}
 @media screen and (max-width:768px) {
     // Top Greeting
     #hello // It's me 
     {
         font-size: 4em;
         width: 4em;
-        overflow: none;
+       margin-bottom: 1em;
     }
     // article that holds Who I am and Contact paragraphs
     #home {

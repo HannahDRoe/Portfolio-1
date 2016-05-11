@@ -23,6 +23,7 @@ app.controller("navCtrl", function($scope, $rootScope) {
 
     $rootScope.$on("documentClicked", _close);
     $rootScope.$on("escapePressed", _close);
+    $rootScope.$on("touchend", _close);
 });
 
 app.directive("nav", function() {
@@ -45,5 +46,8 @@ app.run(function($rootScope) {
 
     document.addEventListener("click", function(e) {
         $rootScope.$broadcast("documentClicked", e.target);
+    });
+    document.addEventListener("touchend", function(e){
+            $rootScope.$broadcast("documentClicked", e.target);
     });
 });
