@@ -76,7 +76,7 @@
 			<!--Contact Form -->
 			<div id="fieldContainer">
 				<p>I am currently working on the PHP for this form. Please email me at hannahdroe@gmail.com <br> Thanks!</p>
-			<form id="contactForm"  action="email_form.php" method="post" role="form" name="contactForm" ng-submit="submitForm(contactForm.$valid)" novalidate>
+			<form id="contactForm" action="email_form.php" method="post" role="form" name="contactForm" ng-submit="submitForm(contactForm.$valid)" novalidate>
 				<fieldset>
 					<!-- Name Input Field -->
 					<div>
@@ -92,10 +92,10 @@
 					<!-- Email Input Field --> 
 					<div>
 						<label for="email">Email Address</label>
-						<input id="email" type="email" name="_replyto" placeholder="Your Email Address" ng-model="email" required />
+						<input id="email" type="email" name="email" placeholder="Your Email Address" ng-model="email" required />
 
 							<!-- Angular Email Verification -->  
-							<div ng-messages="contactForm.email.$error" ng-if="contactForm._replyto.$invalid && contactForm._replyto.$touched">
+							<div ng-messages="contactForm.email.$error" ng-if="contactForm.email.$invalid && contactForm.email.$touched">
 								<p class="messageContnr" ng-message="email">Enter a valid email.</p>
 							</div>
 					</div>
@@ -112,7 +112,7 @@
 						<!-- Anti-spam Because No one likes spam -->
 						<input id="antiSpam" type="text" name="_gotcha" />
 						<!-- Submit Button-->
-						<button type="submit" value="Send" id="submit" ng-disabled="contactForm">Send</button>
+						<button type="submit" value="Send" id="submit">Send</button>
 					</div>
 					
 				</fieldset>
@@ -125,7 +125,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https:////ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-messages.js"></script>
 	<script src="js/app.js" ></script>
-	<script type="text/javascript" src="js/thanks.js"></script>
+
 	
 	</body>
 

@@ -2,7 +2,7 @@
 
 //Sass variables, also used in _topNav.scss
 $headerHeight: 4em;
-$headerBackground: #3C768C;
+
 
 //Skip to Links
 .skipLinks
@@ -61,7 +61,7 @@ $headerBackground: #3C768C;
         height: 4.5em;
         cursor: normal;
         padding:0;
-        background-color: $headerBackground;
+        background-color: none;
         border: none;
     
     }
