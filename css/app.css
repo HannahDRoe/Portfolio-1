@@ -27,33 +27,43 @@ ul li {
   padding: none;
 }
 
-/* line 33, ../sass/app.scss */
+/* line 32, ../sass/app.scss */
+textarea {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 35, ../sass/app.scss */
+input {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 39, ../sass/app.scss */
 a {
   text-decoration: none !important;
   color: #f4f5f9;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 39, ../sass/app.scss */
+  /* line 45, ../sass/app.scss */
   article {
     flex-direction: column;
   }
-  /* line 42, ../sass/app.scss */
+  /* line 48, ../sass/app.scss */
   article p {
     width: auto;
   }
 }
-/* line 9, ../sass/partials/navPartials/_hamburger.scss */
+/* line 9, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_hamburger.scss */
 .skipLinks {
   display: none;
 }
 
-/* line 14, ../sass/partials/navPartials/_hamburger.scss */
+/* line 14, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_hamburger.scss */
 .navigation {
   margin: 0px 3px;
 }
 
-/* line 20, ../sass/partials/navPartials/_hamburger.scss */
+/* line 20, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_hamburger.scss */
 .icon {
   display: block;
   width: 20px;
@@ -63,7 +73,7 @@ a {
   border-radius: 1px;
 }
 
-/* line 32, ../sass/partials/navPartials/_hamburger.scss */
+/* line 32, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_hamburger.scss */
 .sr-only {
   position: absolute;
   overflow: hidden;
@@ -72,7 +82,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 47, ../sass/partials/navPartials/_hamburger.scss */
+  /* line 47, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_hamburger.scss */
   .skipLinks {
     display: block;
     float: left;
@@ -82,16 +92,17 @@ a {
     color: #000;
   }
 
-  /* line 59, ../sass/partials/navPartials/_hamburger.scss */
+  /* line 59, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_hamburger.scss */
   button {
-    height: 4.5em;
+    height: 4.75em;
     cursor: normal;
     padding: 0;
-    background-color: none;
+    background-color: #3C768C;
     border: none;
+    padding-bottom: .5em;
   }
 }
-/* line 13, ../sass/partials/navPartials/_topNav.scss */
+/* line 13, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
 header {
   position: relative;
   height: 4em;
@@ -106,7 +117,7 @@ header {
   box-shadow: 0 5px 5px -5px #63696f;
 }
 
-/* line 30, ../sass/partials/navPartials/_topNav.scss */
+/* line 30, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
 .brand {
   position: relative;
   white-space: nowrap;
@@ -117,12 +128,12 @@ header {
   width: 8em;
 }
 
-/* line 40, ../sass/partials/navPartials/_topNav.scss */
+/* line 40, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
 #nav {
   width: 100%;
 }
 
-/* line 43, ../sass/partials/navPartials/_topNav.scss */
+/* line 43, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
 #navSpan {
   display: flex;
   flex-direction: row;
@@ -130,7 +141,7 @@ header {
   flex-wrap: nowrap;
 }
 
-/* line 50, ../sass/partials/navPartials/_topNav.scss */
+/* line 50, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
 #navLinks {
   position: relative;
   display: flex;
@@ -139,14 +150,14 @@ header {
   padding: 0;
   height: 4em;
 }
-/* line 59, ../sass/partials/navPartials/_topNav.scss */
+/* line 59, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
 #navLinks li {
   position: relative;
   display: flex;
   width: 6em;
 }
 
-/* line 66, ../sass/partials/navPartials/_topNav.scss */
+/* line 66, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
 .navLinkA {
   padding-top: .75em;
   text-align: center;
@@ -154,20 +165,20 @@ header {
   width: 100%;
   color: #FCFCFC;
 }
-/* line 73, ../sass/partials/navPartials/_topNav.scss */
+/* line 73, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
 .navLinkA:hover {
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
-/* line 78, ../sass/partials/navPartials/_topNav.scss */
+/* line 78, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
 .active {
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 84, ../sass/partials/navPartials/_topNav.scss */
+  /* line 84, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
   .brand {
     position: absolute;
     font-family: "Open Sans", sans-serif;
@@ -176,25 +187,25 @@ header {
     width: 7em;
   }
 
-  /* line 92, ../sass/partials/navPartials/_topNav.scss */
+  /* line 92, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
   .show.left {
     -webkit-transform: translate3d(250px, 0, 0);
   }
 
-  /* line 95, ../sass/partials/navPartials/_topNav.scss */
+  /* line 95, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
   .left {
     left: -250px;
     background: #3c768c;
   }
 
-  /* line 100, ../sass/partials/navPartials/_topNav.scss */
+  /* line 100, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
   #navSpan {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  /* line 107, ../sass/partials/navPartials/_topNav.scss */
+  /* line 107, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
   #navLinks {
     display: flex;
     flex-direction: column;
@@ -204,7 +215,7 @@ header {
     height: 15em;
     width: 100%;
   }
-  /* line 116, ../sass/partials/navPartials/_topNav.scss */
+  /* line 116, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
   #navLinks li {
     position: relative;
     display: flex;
@@ -212,7 +223,7 @@ header {
     height: 4em;
   }
 
-  /* line 123, ../sass/partials/navPartials/_topNav.scss */
+  /* line 123, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
   .navLinkA {
     padding-top: .75em;
     text-align: center;
@@ -220,7 +231,7 @@ header {
     width: 100%;
   }
 
-  /* line 130, ../sass/partials/navPartials/_topNav.scss */
+  /* line 130, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
   .leftPushNav {
     position: fixed;
     z-index: 3;
@@ -233,12 +244,12 @@ header {
     background: #3c768c;
     box-shadow: inset -10px 0 30px -15px #254956;
   }
-  /* line 142, ../sass/partials/navPartials/_topNav.scss */
+  /* line 142, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_topNav.scss */
   .leftPushNav a {
     color: white;
   }
 }
-/* line 16, ../sass/partials/navPartials/_iconList.scss */
+/* line 16, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_iconList.scss */
 #iconList {
   display: flex;
   flex-direction: row;
@@ -251,54 +262,54 @@ header {
   position: relative;
 }
 
-/* line 27, ../sass/partials/navPartials/_iconList.scss */
+/* line 27, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_iconList.scss */
 .iconListA {
   display: flex;
   align-items: center;
   margin: 0;
 }
 
-/* line 33, ../sass/partials/navPartials/_iconList.scss */
+/* line 33, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_iconList.scss */
 #linkedIn {
   background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/linkedin-logo.svg") center no-repeat;
   background-size: 1.5em  1.5em;
   height: 4em;
   width: 3em;
 }
-/* line 10, ../sass/partials/navPartials/_iconList.scss */
+/* line 10, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_iconList.scss */
 #linkedIn:hover {
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
-/* line 38, ../sass/partials/navPartials/_iconList.scss */
+/* line 38, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_iconList.scss */
 #bitBucket {
   background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/bit-bucket-logo.svg") center no-repeat;
   background-size: 1.5em  1.5em;
   height: 4em;
   width: 3em;
 }
-/* line 10, ../sass/partials/navPartials/_iconList.scss */
+/* line 10, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_iconList.scss */
 #bitBucket:hover {
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
-/* line 43, ../sass/partials/navPartials/_iconList.scss */
+/* line 43, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_iconList.scss */
 #emailMe {
   background: url("https://s3-us-west-2.amazonaws.com/portfolio-hannahdroe/email.svg") center no-repeat;
   background-size: 1.5em  1.5em;
   height: 4em;
   width: 3em;
 }
-/* line 10, ../sass/partials/navPartials/_iconList.scss */
+/* line 10, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_iconList.scss */
 #emailMe:hover {
   background-color: #94bac9;
   transition: background-color 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 54, ../sass/partials/navPartials/_iconList.scss */
+  /* line 54, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/navPartials/_iconList.scss */
   #iconList {
     display: flex;
     flex-direction: row;
@@ -309,7 +320,7 @@ header {
     height: 4em;
   }
 }
-/* line 2, ../sass/partials/_index.scss */
+/* line 2, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
 #indexBody {
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
@@ -319,7 +330,7 @@ header {
   height: 100%;
 }
 
-/* line 12, ../sass/partials/_index.scss */
+/* line 12, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
 #hello {
   line-height: 1.3em;
   position: relative;
@@ -330,40 +341,40 @@ header {
   margin: 1em 0em 0em 1.5em;
 }
 
-/* line 22, ../sass/partials/_index.scss */
+/* line 22, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
 #home {
   display: flex;
   flex-direction: column;
   margin: 4em 0 0 10em;
 }
 
-/* line 28, ../sass/partials/_index.scss */
+/* line 28, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
 #whatIDo {
   position: relative;
   width: 30em;
 }
 
-/* line 33, ../sass/partials/_index.scss */
+/* line 33, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
 #contactMe {
   position: relative;
   margin-top: 1em;
   width: 30em;
 }
 
-/* line 38, ../sass/partials/_index.scss */
+/* line 38, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
 #emailLink {
   text-decoration: underline !important;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 44, ../sass/partials/_index.scss */
+  /* line 44, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
   #hello {
     font-size: 4em;
     width: 4em;
     margin-bottom: 1em;
   }
 
-  /* line 50, ../sass/partials/_index.scss */
+  /* line 50, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
   #home {
     flex-direction: column;
     margin-top: 0;
@@ -371,24 +382,24 @@ header {
     margin-left: 5em;
   }
 
-  /* line 57, ../sass/partials/_index.scss */
+  /* line 57, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
   #whatIDo {
     width: 15em;
   }
 
-  /* line 60, ../sass/partials/_index.scss */
+  /* line 60, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_index.scss */
   #contactMe {
     width: 15em;
   }
 }
-/* line 5, ../sass/partials/_about.scss */
+/* line 5, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
 #aboutTitle {
   position: relative;
   margin: 1em 0em 1em 2em;
   font-size: 4em;
 }
 
-/* line 11, ../sass/partials/_about.scss */
+/* line 11, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
 #aboutArticle {
   position: relative;
   left: 10%;
@@ -397,32 +408,32 @@ header {
   width: 45em;
 }
 
-/* line 19, ../sass/partials/_about.scss */
+/* line 19, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
 #aboutP #skillSetSect {
   left: 25%;
   width: 100%;
 }
 
-/* line 24, ../sass/partials/_about.scss */
+/* line 24, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
 .skillSetLi {
   display: list-item;
   list-style-type: none;
 }
 
-/* line 28, ../sass/partials/_about.scss */
+/* line 28, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
 .skillSetLi:before {
   content: "• ";
   color: #3c768c;
 }
 
-/* line 33, ../sass/partials/_about.scss */
+/* line 33, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
 #selfPortraitDiv {
   display: block;
   margin-top: 5em;
   text-align: center;
 }
 
-/* line 39, ../sass/partials/_about.scss */
+/* line 39, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
 #selfPortrait {
   position: relative;
   text-align: center;
@@ -432,20 +443,20 @@ header {
   border-radius: .25em;
 }
 
-/* line 48, ../sass/partials/_about.scss */
+/* line 48, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
 #resumeLink {
   display: block;
   padding-bottom: 1em;
 }
 
 @media screen and (max-width: 775px) {
-  /* line 53, ../sass/partials/_about.scss */
+  /* line 53, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
   #aboutTitle {
     padding-right: 0;
     margin: .5em;
   }
 
-  /* line 58, ../sass/partials/_about.scss */
+  /* line 58, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_about.scss */
   #aboutArticle {
     position: relative;
     left: 5%;
@@ -453,19 +464,19 @@ header {
     width: 16em;
   }
 }
-/* line 4, ../sass/partials/_portfolio.scss */
+/* line 4, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_portfolio.scss */
 main {
   width: 100%;
 }
 
-/* line 8, ../sass/partials/_portfolio.scss */
+/* line 8, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_portfolio.scss */
 #portfolioTitle {
   position: relative;
   margin: 1em 0em 1em 2em;
   font-size: 4em;
 }
 
-/* line 14, ../sass/partials/_portfolio.scss */
+/* line 14, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_portfolio.scss */
 #portfolioUl {
   display: flex;
   flex-direction: column;
@@ -477,7 +488,7 @@ main {
   height: 100%;
 }
 
-/* line 25, ../sass/partials/_portfolio.scss */
+/* line 25, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_portfolio.scss */
 .portfolioLi {
   text-align: center;
   display: flex;
@@ -490,7 +501,7 @@ main {
   padding: 2em;
 }
 
-/* line 37, ../sass/partials/_portfolio.scss */
+/* line 37, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_portfolio.scss */
 #rightImg, #centerImg, #leftImg {
   border-radius: .15em;
   height: auto;
@@ -499,19 +510,19 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 45, ../sass/partials/_portfolio.scss */
+  /* line 45, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_portfolio.scss */
   #portfolioTitle {
     padding-right: 0;
     margin: .5em;
   }
 
-  /* line 50, ../sass/partials/_portfolio.scss */
+  /* line 50, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_portfolio.scss */
   #portfolioUl {
     flex-direction: column;
     width: 100%;
   }
 
-  /* line 55, ../sass/partials/_portfolio.scss */
+  /* line 55, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_portfolio.scss */
   .portfolioLi {
     display: flex;
     flex-direction: column;
@@ -519,20 +530,20 @@ main {
     width: 80%;
   }
 }
-/* line 7, ../sass/partials/_contact.scss */
+/* line 7, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 #contactHeader {
   position: relative;
   margin: 1em 0em 1em 2em;
   font-size: 4em;
 }
 
-/* line 14, ../sass/partials/_contact.scss */
+/* line 14, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 fieldset {
   border: 0;
   width: 100%;
 }
 
-/* line 19, ../sass/partials/_contact.scss */
+/* line 19, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 #fieldContainer {
   position: relative;
   display: flex;
@@ -543,12 +554,12 @@ fieldset {
   width: 100%;
 }
 
-/* line 29, ../sass/partials/_contact.scss */
+/* line 30, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 label {
   display: none;
 }
 
-/* line 33, ../sass/partials/_contact.scss */
+/* line 34, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 input {
   margin-bottom: .75em;
   width: 30.25em;
@@ -558,7 +569,7 @@ input {
   box-shadow: 0;
 }
 
-/* line 42, ../sass/partials/_contact.scss */
+/* line 43, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 textarea {
   height: 5em;
   width: 30em;
@@ -568,13 +579,14 @@ textarea {
   border-radius: 0.15em;
 }
 
-/* line 52, ../sass/partials/_contact.scss */
+/* line 54, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 #antiSpam {
   display: none;
 }
 
-/* line 56, ../sass/partials/_contact.scss */
+/* line 58, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 #submit {
+  position: relative;
   height: 3em;
   margin-top: 2em;
   display: block;
@@ -584,27 +596,29 @@ textarea {
   cursor: pointer;
   border: none;
   border-radius: 0.15em;
+  margin-left: 2em;
 }
 
-/* line 68, ../sass/partials/_contact.scss */
+/* line 73, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 #submit:disabled {
   cursor: default;
   background-color: #91bfd0;
 }
 
-/* line 73, ../sass/partials/_contact.scss */
+/* line 78, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 .messageContnr {
   width: 65%;
-  height: 1.75em;
-  color: #fcfdfe;
-  background-color: #91bfd0;
-  border-radius: .15em;
+  height: 2em;
+  color: #eee;
+  background-color: #3c768c;
+  border-radius: 0.15em;
   margin-top: .25em;
-  padding: 0 0  .25em .5em;
+  margin-left: 2.75em;
+  padding: 0 0 .25em .5em;
   font-size: .95em;
 }
 
-/* line 84, ../sass/partials/_contact.scss */
+/* line 91, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
 #thankYouMessage {
   height: 100%;
   width: 50%;
@@ -615,40 +629,53 @@ textarea {
   background: #94BAC9;
 }
 
-@media screen and (max-width: 768px) {
-  /* line 102, ../sass/partials/_contact.scss */
+@media screen and (max-width: 415px) {
+  /* line 108, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
   #contactHeader {
     padding-right: 0;
     margin: .5em;
-    font-size: 3em;
+    font-size: 2.75em;
   }
 
-  /* line 108, ../sass/partials/_contact.scss */
+  /* line 114, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
   fieldset {
     border: 0;
-    width: 23em;
+    width: 18em;
     margin-right: 0;
   }
 
-  /* line 114, ../sass/partials/_contact.scss */
+  /* line 120, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
+  #contactForm {
+    width: 0;
+  }
+
+  /* line 123, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
   form {
     position: absolute;
     height: 30em;
     width: 23em;
-    margin: 2em 0 0 1em;
+    margin: 2em 0 0 0;
   }
 
-  /* line 121, ../sass/partials/_contact.scss */
+  /* line 130, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
   input {
-    margin-bottom: .5em;
-    width: 75%;
+    margin-bottom: 1em;
+    width: 80%;
     height: 3em;
     border-radius: 0.15em;
     padding: 0;
   }
 
-  /* line 129, ../sass/partials/_contact.scss */
+  /* line 138, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
   textarea {
-    width: 75%;
+    width: 80%;
+  }
+
+  /* line 141, C:/Users/Scott/Desktop/web_development/Portfolio/sass/partials/_contact.scss */
+  .messageContnr {
+    position: relative;
+    margin: 0 auto .75em auto;
+    width: 80%;
+    padding: auto;
   }
 }

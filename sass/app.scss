@@ -29,6 +29,12 @@ ul li {
     display: inline;
     padding: none;
 }
+textarea{
+    font-family: $mainFont;
+}
+input{
+    font-family: $mainFont;
+}
 //Styles for links
 a {
     text-decoration: none !important;

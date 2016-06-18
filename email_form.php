@@ -18,7 +18,7 @@ $message
 
 EMAIL;
 
-$header ='From: $email';
+$header ='From: Portfolio';
 
 if($_POST){
 	mail($to, $subject, $body, $header);

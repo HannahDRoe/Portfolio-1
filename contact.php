@@ -19,6 +19,7 @@
 		<![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Quicksand:300' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src ="js/googleAnalytics.js"></script>
 	</head>
 	<body  ng-app="NavApp" ng-controller="navCtrl" class="ng-scope"ng-app="contactApp" ng-controller="formCtrl">
 		<header id="top" >
@@ -49,7 +50,7 @@
 						<li><a href="index.html" class="navLinkA">Home</a></li>
 						<li><a href="about.html" class="navLinkA">About</a></li>
 						<li><a href="portfolio.html" class="navLinkA">Portfolio</a></li>
-						<li><a href="#top" class="active navLinkA">Contact</a></li>
+						<li><a href="#" class="active navLinkA">Contact</a></li>
 
 					</ul>
 					
@@ -62,7 +63,7 @@
 							<a href="http://www.bitbucket.org/hannahdroe/" target="_blank"  id="bitBucket" class="iconListA"></a>
 						</li>
 						<li>
-							<a href="contact.html" id="emailMe" class="iconListA"></a>
+							<a href="contact.php" id="emailMe" class="iconListA"></a>
 						</li>
 					</ul>
 				</span>
@@ -72,10 +73,10 @@
 		<!-- Main Content -->
 		<main>
 			<h1 id="contactHeader">Contact Me</h1>
-			<div id="thankYouDiv"></div>
+			
 			<!--Contact Form -->
 			<div id="fieldContainer">
-				<p>I am currently working on the PHP for this form. Please email me at hannahdroe@gmail.com <br> Thanks!</p>
+			<p>Send Me a Message</p>
 			<form id="contactForm" action="email_form.php" method="post" role="form" name="contactForm" ng-submit="submitForm(contactForm.$valid)" novalidate>
 				<fieldset>
 					<!-- Name Input Field -->
@@ -112,7 +113,7 @@
 						<!-- Anti-spam Because No one likes spam -->
 						<input id="antiSpam" type="text" name="_gotcha" />
 						<!-- Submit Button-->
-						<button type="submit" value="Send" id="submit">Send</button>
+						<button type="submit" value="Send" id="submit" ng-disabled="contactForm.$invalid">Send</button>
 					</div>
 					
 				</fieldset>
